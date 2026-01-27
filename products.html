@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💰 Loan Products & Features - Flexi Loans Training</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="fav.png">
+</head>
+<body>
+        <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Flexi Loans" class="logo-img">
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-university"></i> Basics <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="rbi-banking.html" class="dropdown-item"><i class="fas fa-university"></i> RBI & Banking Fundamentals</a>
+                        <a href="products.html" class="dropdown-item"><i class="fas fa-coins"></i> Loan Products & Features</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-check-circle"></i> Eligibility <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="eligibility.html" class="dropdown-item"><i class="fas fa-check-circle"></i> Eligibility Criteria</a>
+                        <a href="cibil-credit.html" class="dropdown-item"><i class="fas fa-chart-line"></i> CIBIL & Credit Rules</a>
+                        <a href="policies.html" class="dropdown-item"><i class="fas fa-shield-alt"></i> Special Policies</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-exclamation-triangle"></i> Risk <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="business-types.html" class="dropdown-item"><i class="fas fa-briefcase"></i> Business Types & Risk</a>
+                        <a href="crm-system.html" class="dropdown-item"><i class="fas fa-users"></i> CRM Identity System</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-book"></i> Resources <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="documents.html" class="dropdown-item"><i class="fas fa-file-alt"></i> Documents & KYC</a>
+                        <a href="crm-practice.html" class="dropdown-item"><i class="fas fa-desktop"></i> CRM Practice</a>
+                        <a href="resources.html" class="dropdown-item"><i class="fas fa-book-open"></i> Resource (Training Material)</a>
+                        <a href="scripts.html" class="dropdown-item"><i class="fas fa-phone"></i> Calling Scripts</a>
+                        <a href="rebuttals.html" class="dropdown-item"><i class="fas fa-question-circle"></i> Rebuttals</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-clipboard-check"></i> Tests <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                                                <a href="testday1.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 1</a>
+                        <a href="testday2.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 2</a>
+                        <a href="testday3.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 3</a>
+                        <a href="testday4.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 4</a>
+                        <a href="testday5.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 5</a>
+                        <a href="testday6.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 6</a>
+                    </div>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Basic Loan Details -->
+    <section class="section">
+        <div class="container">
+            <h2><i class="fas fa-info-circle"></i> Basic Loan Information</h2>
+            
+            <div class="basic-info-grid">
+                <div class="info-card primary">
+                    <i class="rupees-symbol"></i>
+                    <h3>Loan Amount</h3>
+                    <div class="amount-range">₹50,000 to ₹25,00,000</div>
+                </div>
+                
+                <div class="info-card secondary">
+                    <i class="fas fa-calendar"></i>
+                    <h3>Tenure</h3>
+                    <div class="tenure-range">12 to 36 months</div>
+                </div>
+                
+                <div class="info-card accent">
+                    <i class="fas fa-percentage"></i>
+                    <h3>Interest Rates</h3>
+                    <div class="rate-info">
+                        <div class="rate-item">
+                            Flat Interest Rate:<br>
+                            1% - 2% per month<br>
+                            (12% - 24% per annum)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="warning-box">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div class="warning-content">
+                    <h4>For Loan Requests Above ₹25 Lakh</h4>
+                    <p>"Sir, currently our maximum limit is ₹25 lakh. However, after 6 months of successful repayment, you'll receive a top-up loan offer for higher amounts based on your repayment history."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types of Interest Rates -->
+    <section class="section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-chart-line"></i> Types of Rate of Interest (ROI)</h2>
+            
+            <div class="roi-grid">
+                <div class="roi-card">
+                    <div class="roi-header">
+                        <i class="fas fa-equals"></i>
+                        <h3>1. Flat ROI</h3>
+                    </div>
+                    <div class="roi-content">
+                        <p>EMI remains constant every month</p>
+                        
+                        <div class="example-box">
+                            <h4>Example:</h4>
+                            <div class="calculation">
+                                <div class="calc-item">
+                                    <span class="label">Principal:</span>
+                                    <span class="value">₹5,000</span>
+                                </div>
+                                <div class="calc-item">
+                                    <span class="label">Interest:</span>
+                                    <span class="value">₹1,600</span>
+                                </div>
+                                <div class="calc-result">
+                                    Same amount every month
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="roi-card">
+                    <div class="roi-header">
+                        <i class="fas fa-wave-square"></i>
+                        <h3>2. Floating ROI</h3>
+                    </div>
+                    <div class="roi-content">
+                        <p>Interest may increase or decrease based on market conditions</p>
+                        
+                        <div class="features">
+                            <ul>
+                                <li>Varies with market rates</li>
+                                <li>Can go up or down</li>
+                                <li>Linked to benchmark rates</li>
+                                <li>EMI amount changes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="roi-card">
+                    <div class="roi-header">
+                        <i class="fas fa-chart-line-down"></i>
+                        <h3>3. Reducing ROI</h3>
+                    </div>
+                    <div class="roi-content">
+                        <p>Interest decreases as principal reduces</p>
+                        
+                        <div class="example-box">
+                            <h4>Example:</h4>
+                            <div class="calculation">
+                                <div class="emi-breakdown">
+                                    <div class="emi-item">
+                                        EMI 1:<br>
+                                        Principal ₹5,000 + Interest ₹1,600
+                                    </div>
+                                    <div class="emi-item">
+                                        EMI 2:<br>
+                                        Principal ₹5,100 + Interest ₹1,500
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loan Type & Features -->
+    <section class="section">
+        <div class="container">
+            <h2><i class="fas fa-tags"></i> Loan Type & Key Features</h2>
+            
+            <div class="loan-type-card">
+                <h3><i class="fas fa-briefcase"></i> Loan Classification</h3>
+                <div class="type-tags">
+                    <span class="tag primary">Term Loan</span>
+                    <span class="tag secondary">Unsecured Business Loan</span>
+                    <span class="tag accent">SME / MSME Loan</span>
+                </div>
+            </div>
+            
+            <div class="features-showcase">
+                <h3><i class="fas fa-star"></i> Key Features</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-mobile-alt text-success"></i>
+                        <span>100% Digital Process</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt text-success"></i>
+                        <span>No Collateral Required</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-unlock text-success"></i>
+                        <span>No EMI Locking</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-hand-paper text-success"></i>
+                        <span>No Usage Restrictions</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-rocket text-success"></i>
+                        <span>Quick Disbursal (24-48 hours)</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-calendar-check text-success"></i>
+                        <span>Foreclosure/Pre-closure Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EMI Calculation -->
+    <section class="section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-calculator"></i> EMI Calculation</h2>
+            
+            <div class="calculation-card">
+                <h3><i class="fas fa-formula"></i> EMI Formula</h3>
+                <div class="formula-box">
+                    <div class="formula">
+                        EMI = (Principal + Interest Amount) ÷ Tenure
+                    </div>
+                </div>
+                
+                <div class="calculation-example">
+                    <h4>Detailed Example:</h4>
+                    <div class="example-grid">
+                        <div class="input-section">
+                            <h5>Given:</h5>
+                            <div class="input-item">
+                                <span class="label">Principal:</span>
+                                <span class="value">₹1,00,000</span>
+                            </div>
+                            <div class="input-item">
+                                <span class="label">Interest rate:</span>
+                                <span class="value">20%</span>
+                            </div>
+                            <div class="input-item">
+                                <span class="label">Tenure:</span>
+                                <span class="value">24 months</span>
+                            </div>
+                        </div>
+                        
+                        <div class="calculation-section">
+                            <h5>Calculation:</h5>
+                            <div class="calc-step">
+                                <span class="step">Interest amount:</span>
+                                <span class="result">₹20,000</span>
+                            </div>
+                            <div class="calc-step">
+                                <span class="step">Total payable:</span>
+                                <span class="result">₹1,20,000</span>
+                            </div>
+                            <div class="calc-step final">
+                                <span class="step">EMI:</span>
+                                <span class="result">₹1,20,000 ÷ 24 = ₹5,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processing Charges -->
+    <section class="section">
+        <div class="container">
+            <h2><i class="fas fa-receipt"></i> Processing Charges</h2>
+            
+            <div class="charges-card">
+                <div class="charges-breakdown">
+                    <div class="charge-item">
+                        <i class="fas fa-percentage"></i>
+                        <div class="charge-info">
+                            <h4>Processing Fee</h4>
+                            <div class="charge-value">2.5% of loan amount</div>
+                        </div>
+                    </div>
+                    
+                    <div class="charge-item">
+                        <i class="fas fa-plus"></i>
+                        <div class="charge-info">
+                            <h4>GST on Processing Fee</h4>
+                            <div class="charge-value">18%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="important-note">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div class="note-content">
+                        <h4>Important:</h4>
+                        <ul>
+                            <li>These charges are deducted from principal before disbursal</li>
+                            <li>Remaining amount is credited to customer's account</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foreclosure/Pre-closure -->
+    <section class="section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-calendar-check"></i> Foreclosure / Pre-closure</h2>
+            
+            <div class="foreclosure-card">
+                <div class="definition">
+                    <h3><i class="fas fa-info-circle"></i> Definition</h3>
+                    <p>If customer pays the entire outstanding loan amount at once before tenure completion, it is called Foreclosure or Pre-closure.</p>
+                </div>
+                
+                <div class="foreclosure-benefits">
+                    <h4>Benefits:</h4>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>Save on future interest</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-calendar-times"></i>
+                            <span>Close loan early</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Improve credit score</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <span>No prepayment penalty</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-building"></i> About Flexi Loans</h3>
+                    <div class="company-info">
+                        <p>Flexi Loans is a leading NBFC specializing in unsecured business loans for SME/MSME since 2016.</p>
+                        <p>We provide ₹50K - ₹25L loans with 12-36 months tenure at competitive rates.</p>
+                        <p>Our 100% digital process ensures quick disbursal within 24-48 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <div class="quick-links">
+                        <a href="index.html#about" class="quick-link">
+                            <i class="fas fa-building"></i>
+                            <span>About Flexi Loans</span>
+                        </a>
+                        <a href="rbi-banking.html" class="quick-link">
+                            <i class="fas fa-university"></i>
+                            <span>RBI & Banking</span>
+                        </a>
+                        <a href="products.html" class="quick-link">
+                            <i class="fas fa-coins"></i>
+                            <span>Loan Products</span>
+                        </a>
+                        <a href="eligibility.html" class="quick-link">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Eligibility</span>
+                        </a>
+                        <a href="cibil-credit.html" class="quick-link">
+                            <i class="fas fa-chart-line"></i>
+                            <span>CIBIL Rules</span>
+                        </a>
+                        <a href="policies.html" class="quick-link">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Special Policies</span>
+                        </a>
+                        <a href="documents.html" class="quick-link">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Documents</span>
+                        </a>
+                        <a href="scripts.html" class="quick-link">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Scripts</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-text">
+                                Head Office
+                                7th Floor, One World Centre<br>
+                                Lower Parel, Mumbai - 400013
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                Established
+                                Since 2016<br>
+                                NBFC License Holder
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="contact-text">
+                                Specialization
+                                SME/MSME Business Loans<br>
+                                Unsecured Financing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="acknowledgment">
+                <h3><i class="fas fa-heart"></i> Special Acknowledgment</h3>
+                <p>Heartfelt gratitude to Mr. Sanath Sir (Sr. Trainer Vindhya) for providing this comprehensive training material and making this knowledge accessible to all Flexi Loans calling agents.</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>2026 Vishwajeet. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="scroll-to-top" id="scrollToTop" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

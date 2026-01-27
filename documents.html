@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📄 Documents & KYC - Flexi Loans Training</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="fav.png">
+</head>
+<body>
+        <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Flexi Loans" class="logo-img">
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-university"></i> Basics <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="rbi-banking.html" class="dropdown-item"><i class="fas fa-university"></i> RBI & Banking Fundamentals</a>
+                        <a href="products.html" class="dropdown-item"><i class="fas fa-coins"></i> Loan Products & Features</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-check-circle"></i> Eligibility <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="eligibility.html" class="dropdown-item"><i class="fas fa-check-circle"></i> Eligibility Criteria</a>
+                        <a href="cibil-credit.html" class="dropdown-item"><i class="fas fa-chart-line"></i> CIBIL & Credit Rules</a>
+                        <a href="policies.html" class="dropdown-item"><i class="fas fa-shield-alt"></i> Special Policies</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-exclamation-triangle"></i> Risk <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="business-types.html" class="dropdown-item"><i class="fas fa-briefcase"></i> Business Types & Risk</a>
+                        <a href="crm-system.html" class="dropdown-item"><i class="fas fa-users"></i> CRM Identity System</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-book"></i> Resources <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="documents.html" class="dropdown-item"><i class="fas fa-file-alt"></i> Documents & KYC</a>
+                        <a href="crm-practice.html" class="dropdown-item"><i class="fas fa-desktop"></i> CRM Practice</a>
+                        <a href="resources.html" class="dropdown-item"><i class="fas fa-book-open"></i> Resource (Training Material)</a>
+                        <a href="scripts.html" class="dropdown-item"><i class="fas fa-phone"></i> Calling Scripts</a>
+                        <a href="rebuttals.html" class="dropdown-item"><i class="fas fa-question-circle"></i> Rebuttals</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-clipboard-check"></i> Tests <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                                                <a href="testday1.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 1</a>
+                        <a href="testday2.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 2</a>
+                        <a href="testday3.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 3</a>
+                        <a href="testday4.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 4</a>
+                        <a href="testday5.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 5</a>
+                        <a href="testday6.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 6</a>
+                    </div>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-file-alt"></i> Documents & KYC</h1>
+            <p>Complete guide to required documents and KYC procedures</p>
+        </div>
+    </section>
+
+    <!-- Individual KYC Documents -->
+    <section class="section">
+        <div class="container">
+            <h2><i class="fas fa-id-card"></i> Individual KYC Documents</h2>
+            
+            <div class="kyc-documents-grid">
+                <div class="doc-item">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Aadhar Card</h3>
+                    <p>Primary identity and address proof</p>
+                </div>
+                
+                <div class="doc-item">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>PAN Card</h3>
+                    <p>Mandatory for income tax identification</p>
+                </div>
+                
+                <div class="doc-item">
+                    <i class="fas fa-vote-yea"></i>
+                    <h3>Voter ID</h3>
+                    <p>Government issued identity proof</p>
+                </div>
+                
+                <div class="doc-item">
+                    <i class="fas fa-passport"></i>
+                    <h3>Passport</h3>
+                    <p>International identity document</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Residence Address Proof -->
+    <section class="section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-home"></i> Residence Address Proof</h2>
+            
+            <div class="address-proof-sections">
+                <!-- For Rented Property -->
+                <div class="proof-section">
+                    <h3><i class="fas fa-key"></i> For Rented Property</h3>
+                    <div class="documents-grid">
+                        <div class="doc-card accepted">
+                            <i class="fas fa-id-card"></i>
+                            <span>Aadhar Card</span>
+                        </div>
+                        <div class="doc-card accepted">
+                            <i class="fas fa-vote-yea"></i>
+                            <span>Voter ID</span>
+                        </div>
+                        <div class="doc-card accepted">
+                            <i class="fas fa-passport"></i>
+                            <span>Passport</span>
+                        </div>
+                        <div class="doc-card accepted">
+                            <i class="fas fa-file-contract"></i>
+                            <span>Rent Agreement</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- For Owned Property -->
+                <div class="proof-section">
+                    <h3><i class="fas fa-home"></i> For Owned Property</h3>
+                    <div class="documents-grid">
+                        <div class="doc-card business-address">
+                            <i class="fas fa-bolt"></i>
+                            <span>Electricity Bill</span>
+                        </div>
+                        <div class="doc-card business-address">
+                            <i class="fas fa-tint"></i>
+                            <span>Water Supply Bill</span>
+                        </div>
+                       
+                        <div class="doc-card business-address">
+                            <i class="fas fa-fire"></i>
+                            <span>Index Copy/Tax Copy</span>
+                        </div>
+                        <div class="doc-card business-address">
+                            <i class="fas fa-file-contract"></i>
+                            <span>Property Sale Deed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Not Accepted -->
+                <div class="proof-section">
+                    <h3><i class="fas fa-times-circle"></i> Not Accepted</h3>
+                    <div class="documents-grid">
+                        <div class="doc-card rejected">
+                            <i class="fas fa-utensils"></i>
+                            <span>Ration Card</span>
+                        </div>
+                        <div class="doc-card rejected">
+                            <i class="fas fa-gas-pump"></i>
+                            <span>Cylinder Gas Bill</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Vintage Proofs -->
+    <section class="section">
+        <div class="container">
+            <h2><i class="fas fa-calendar-alt"></i> Business Vintage Proofs</h2>
+            
+            <div class="vintage-proof-sections">
+                <!-- Accepted Documents -->
+                <div class="proof-section">
+                    <h3><i class="fas fa-check-circle"></i> Accepted</h3>
+                    <div class="vintage-docs-grid">
+                        <div class="vintage-doc accepted">
+                            <i class="fas fa-receipt"></i>
+                            <div class="doc-info">
+                                <h4>GST Certificate</h4>
+                                <p>Goods and Services Tax registration</p>
+                            </div>
+                        </div>
+                        
+                        <div class="vintage-doc accepted">
+                            <i class="fas fa-store"></i>
+                            <div class="doc-info">
+                                <h4>Trade License</h4>
+                                <p>Municipal trade license</p>
+                            </div>
+                        </div>
+                        
+                        <div class="vintage-doc accepted">
+                            <i class="fas fa-pills"></i>
+                            <div class="doc-info">
+                                <h4>Drug License</h4>
+                                <p>For pharmaceutical businesses</p>
+                            </div>
+                        </div>
+                        
+                        <div class="vintage-doc accepted">
+                            <i class="fas fa-utensils"></i>
+                            <div class="doc-info">
+                                <h4>Food License</h4>
+                                <p>FSSAI license for food businesses</p>
+                            </div>
+                        </div>
+                        
+                        <div class="vintage-doc accepted">
+                            <i class="fas fa-building"></i>
+                            <div class="doc-info">
+                                <h4>Shops & Establishment Certificate</h4>
+                                <p>Gumasta / Labour / Contract license</p>
+                            </div>
+                        </div>                        
+                        <div class="vintage-doc accepted">
+                            <i class="fas fa-credit-card"></i>
+                            <div class="doc-info">
+                                <h4>Company PAN Card</h4>
+                                <p>Business PAN registration</p>
+                            </div>
+                        </div>
+                        
+                        <div class="vintage-doc accepted">
+                            <i class="fas fa-file-invoice"></i>
+                            <div class="doc-info">
+                                <h4>ITR</h4>
+                                <p>Income Tax Return</p>
+                            </div>
+                        </div>
+                        
+                        <div class="vintage-doc accepted">
+                            <i class="fas fa-university"></i>
+                            <div class="doc-info">
+                                <h4>Business Account</h4>
+                                <p>CA / CC / OD account statements</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="vintage-doc caution">
+                            <i class="fas fa-industry"></i>
+                            <div class="doc-info">
+                                <h4>Udyam Registration Certificate</h4>
+                                <p>MSME registration certificate</p>
+                                <small class="caution-note">⚠️ This is only valid for business address proof.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Not Accepted Documents -->
+                <div class="proof-section">
+                    <h3><i class="fas fa-times-circle"></i> Not Accepted</h3>
+                    <div class="vintage-docs-grid">
+                        <div class="vintage-doc rejected">
+                            <i class="fas fa-times"></i>
+                            <div class="doc-info">
+                                <h4>Udyog Aadhar</h4>
+                                <p>Old MSME registration (discontinued)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="vintage-doc rejected">
+                            <i class="fas fa-times"></i>
+                            <div class="doc-info">
+                                <h4>Handwritten Panchayat License</h4>
+                                <p>Not digitally verifiable</p>
+                            </div>
+                        </div>
+                        
+                        <div class="vintage-doc rejected">
+                            <i class="fas fa-times"></i>
+                            <div class="doc-info">
+                                <h4>BRN Certificate</h4>
+                                <p>Business Registration Number (not valid)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="vintage-doc rejected">
+                            <i class="fas fa-times"></i>
+                            <div class="doc-info">
+                                <h4>Provisional / Suspended / Inactive GST</h4>
+                                <p>GST must be active and valid</p>
+                            </div>
+                        </div>
+                        
+                        <div class="vintage-doc rejected">
+                            <i class="fas fa-times"></i>
+                            <div class="doc-info">
+                                <h4>HUF GST</h4>
+                                <p>Hindu Undivided Family GST not accepted</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="important-note yellow">
+                <i class="fas fa-info-circle"></i>
+                Note: GST was incorporated on 1st July 2017
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Account Types -->
+    <section class="section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-university"></i> Business Account Types</h2>
+            
+            <div class="account-types-sections">
+                <!-- Accepted Account Types -->
+                <div class="account-section">
+                    <h3><i class="fas fa-check-circle"></i> Accepted</h3>
+                    <div class="account-types-grid">
+                        <div class="account-type accepted">
+                            <i class="fas fa-university"></i>
+                            <div class="account-info">
+                                <h4>Current Account (CA)</h4>
+                                <p>Business current account for daily transactions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="account-type accepted">
+                            <i class="fas fa-credit-card"></i>
+                            <div class="account-info">
+                                <h4>Cash Credit (CC)</h4>
+                                <p>Overdraft facility against collateral</p>
+                            </div>
+                        </div>
+                        
+                        <div class="account-type accepted">
+                            <i class="fas fa-coins"></i>
+                            <div class="account-info">
+                                <h4>Overdraft (OD)</h4>
+                                <p>Credit facility against fixed deposits</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Not Accepted Account Types -->
+                <div class="account-section">
+                    <h3><i class="fas fa-times-circle"></i> Not Accepted</h3>
+                    <div class="account-types-grid">
+                        <div class="account-type rejected">
+                            <i class="fas fa-piggy-bank"></i>
+                            <div class="account-info">
+                                <h4>Savings Account</h4>
+                                <p>Personal savings account not accepted for business</p>
+                            </div>
+                        </div>
+                        
+                        <div class="account-type rejected">
+                            <i class="fas fa-wallet"></i>
+                            <div class="account-info">
+                                <h4>Salary Account</h4>
+                                <p>Employee salary account not valid for business</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Document Requirements by Entity Type -->
+    <section class="section">
+        <div class="container">
+            <h2><i class="fas fa-building"></i> Document Requirements by Entity Type</h2>
+            
+            <div class="entity-requirements">
+                <!-- Proprietorship -->
+                <div class="entity-card">
+                    <div class="entity-header">
+                        <i class="fas fa-user"></i>
+                        <h3>1. Proprietorship</h3>
+                    </div>
+                    <div class="entity-docs">
+                        <div class="doc-requirement">
+                            <i class="fas fa-credit-card"></i>
+                            <span>PAN Card</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-home"></i>
+                            <span>Current Residence Address Proof</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-store"></i>
+                            <span>Business License (Vintage Proof)</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-file-invoice"></i>
+                            <span>Last 6 months Bank Statement (Net Banking PDF)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Partnership -->
+                <div class="entity-card">
+                    <div class="entity-header">
+                        <i class="fas fa-users"></i>
+                        <h3>2. Partnership</h3>
+                    </div>
+                    <div class="entity-docs">
+                        <div class="doc-requirement">
+                            <i class="fas fa-credit-card"></i>
+                            <span>All Partners PAN Card</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-id-card"></i>
+                            <span>All Partners Aadhar Card</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-store"></i>
+                            <span>Business License (Vintage Proof)</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Company PAN Card</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-handshake"></i>
+                            <span>Partnership Deed</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-file-invoice"></i>
+                            <span>Last 6 months Bank Statement (Net Banking PDF)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- LLP -->
+                <div class="entity-card">
+                    <div class="entity-header">
+                        <i class="fas fa-handshake"></i>
+                        <h3>3. LLP (Limited Liability Partnership)</h3>
+                    </div>
+                    <div class="entity-docs">
+                        <div class="doc-requirement">
+                            <i class="fas fa-credit-card"></i>
+                            <span>All Partners PAN Card</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-id-card"></i>
+                            <span>All Partners Aadhar Card</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-store"></i>
+                            <span>Business License (Vintage Proof)</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Company PAN Card</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-file-contract"></i>
+                            <span>LLP Agreement</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-file-invoice"></i>
+                            <span>Last 6 months Bank Statement (Net Banking PDF)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Private Limited -->
+                <div class="entity-card">
+                    <div class="entity-header">
+                        <i class="fas fa-building"></i>
+                        <h3>4. Private Limited</h3>
+                    </div>
+                    <div class="entity-docs">
+                        <div class="doc-requirement">
+                            <i class="fas fa-credit-card"></i>
+                            <span>All Directors PAN Card</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-id-card"></i>
+                            <span>All Directors Aadhar Card</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-store"></i>
+                            <span>Business License (Vintage Proof)</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Company PAN Card</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate of Incorporation (COI)</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Memorandum of Association (MOA)</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Articles of Association (AOA)</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Shareholding Pattern (CA Attested - % wise)</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-file-invoice"></i>
+                            <span>Last 6 months Bank Statement (Net Banking PDF)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- OPC -->
+                <div class="entity-card">
+                    <div class="entity-header">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>5. OPC (One Person Company)</h3>
+                    </div>
+                    <div class="entity-docs">
+                        <div class="doc-requirement">
+                            <i class="fas fa-credit-card"></i>
+                            <span>PAN Card</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-home"></i>
+                            <span>Current Residence Address Proof</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-store"></i>
+                            <span>Business License (Vintage Proof)</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Company PAN Card</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate of Incorporation (COI)</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Memorandum of Association (MOA)</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Articles of Association (AOA)</span>
+                        </div>
+                        <div class="doc-requirement">
+                            <i class="fas fa-file-invoice"></i>
+                            <span>Last 6 months Bank Statement (Net Banking PDF)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-building"></i> About Flexi Loans</h3>
+                    <div class="company-info">
+                        <p>Flexi Loans is a leading NBFC specializing in unsecured business loans for SME/MSME since 2016.</p>
+                        <p>We provide ₹50K - ₹25L loans with 12-36 months tenure at competitive rates.</p>
+                        <p>Our 100% digital process ensures quick disbursal within 24-48 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <div class="quick-links">
+                        <a href="index.html#about" class="quick-link">
+                            <i class="fas fa-building"></i>
+                            <span>About Flexi Loans</span>
+                        </a>
+                        <a href="rbi-banking.html" class="quick-link">
+                            <i class="fas fa-university"></i>
+                            <span>RBI & Banking</span>
+                        </a>
+                        <a href="products.html" class="quick-link">
+                            <i class="fas fa-coins"></i>
+                            <span>Loan Products</span>
+                        </a>
+                        <a href="eligibility.html" class="quick-link">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Eligibility</span>
+                        </a>
+                        <a href="cibil-credit.html" class="quick-link">
+                            <i class="fas fa-chart-line"></i>
+                            <span>CIBIL Rules</span>
+                        </a>
+                        <a href="policies.html" class="quick-link">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Special Policies</span>
+                        </a>
+                        <a href="documents.html" class="quick-link">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Documents</span>
+                        </a>
+                        <a href="scripts.html" class="quick-link">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Scripts</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-text">
+                                Head Office
+                                7th Floor, One World Centre<br>
+                                Lower Parel, Mumbai - 400013
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                Established
+                                Since 2016<br>
+                                NBFC License Holder
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="contact-text">
+                                Specialization
+                                SME/MSME Business Loans<br>
+                                Unsecured Financing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="acknowledgment">
+                <h3><i class="fas fa-heart"></i> Special Acknowledgment</h3>
+                <p>Heartfelt gratitude to Mr. Sanath Sir (Sr. Trainer Vindhya) for providing this comprehensive training material and making this knowledge accessible to all Flexi Loans calling agents.</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>2026 Vishwajeet. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="scroll-to-top" id="scrollToTop" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

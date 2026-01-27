@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Practice - Flexi Loans</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="crm-practice.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="fav.png">
+</head>
+<body>
+        <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Flexi Loans" class="logo-img">
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-university"></i> Basics <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="rbi-banking.html" class="dropdown-item"><i class="fas fa-university"></i> RBI & Banking Fundamentals</a>
+                        <a href="products.html" class="dropdown-item"><i class="fas fa-coins"></i> Loan Products & Features</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-check-circle"></i> Eligibility <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="eligibility.html" class="dropdown-item"><i class="fas fa-check-circle"></i> Eligibility Criteria</a>
+                        <a href="cibil-credit.html" class="dropdown-item"><i class="fas fa-chart-line"></i> CIBIL & Credit Rules</a>
+                        <a href="policies.html" class="dropdown-item"><i class="fas fa-shield-alt"></i> Special Policies</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-exclamation-triangle"></i> Risk <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="business-types.html" class="dropdown-item"><i class="fas fa-briefcase"></i> Business Types & Risk</a>
+                        <a href="crm-system.html" class="dropdown-item"><i class="fas fa-users"></i> CRM Identity System</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-book"></i> Resources <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="documents.html" class="dropdown-item"><i class="fas fa-file-alt"></i> Documents & KYC</a>
+                        <a href="crm-practice.html" class="dropdown-item"><i class="fas fa-desktop"></i> CRM Practice</a>
+                        <a href="resources.html" class="dropdown-item"><i class="fas fa-book-open"></i> Resource (Training Material)</a>
+                        <a href="scripts.html" class="dropdown-item"><i class="fas fa-phone"></i> Calling Scripts</a>
+                        <a href="rebuttals.html" class="dropdown-item"><i class="fas fa-question-circle"></i> Rebuttals</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-clipboard-check"></i> Tests <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                                                <a href="testday1.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 1</a>
+                        <a href="testday2.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 2</a>
+                        <a href="testday3.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 3</a>
+                        <a href="testday4.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 4</a>
+                        <a href="testday5.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 5</a>
+                        <a href="testday6.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 6</a>
+                    </div>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CRM Header -->
+    <div class="crm-top-bar">
+        <div class="crm-logo">
+            <div class="rank-badge bronze">
+                <i class="fas fa-medal"></i>
+                <span>Bronze</span>
+            </div>
+            <button class="own-btn" id="ownBtn" onclick="toggleOwnership()">
+                <i class="fas fa-hand-pointer"></i> Own Application
+            </button>
+        </div>
+        <div class="crm-actions">
+            <button class="crm-action-btn whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> Send WA AA Link
+            </button>
+            <button class="crm-action-btn activity-btn">
+                <i class="fas fa-clipboard-list"></i> AA Activity
+            </button>
+            <button class="crm-action-btn">Send AA Link</button>
+            <button class="crm-action-btn">Send Email</button>
+            <button class="crm-action-btn">Send SMS</button>
+        </div>
+    </div>
+
+    <!-- Application Info Bar -->
+    <div class="crm-info-bar">
+        <div class="info-item">
+            <i class="fas fa-file-alt"></i>
+            <div class="info-content">
+                <strong>PEF-KANAR-000-DEC24-00008-AL</strong>
+                <small>APPLICATION ID</small>
+            </div>
+        </div>
+        <div class="info-item status-rejected">
+            <i class="fas fa-chart-line"></i>
+            <div class="info-content">
+                <strong>Not approved - Lender Rejection - Credit Policy Parameters Not Met</strong>
+                <small>17 01 2025 11:16 LAST CHANGED STATUS</small>
+            </div>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-handshake"></i>
+            <div class="info-content">
+                <strong>Other</strong>
+                <small>PARTNER ASSIGNED</small>
+                <span class="platform-badge">Platform_Web</span>
+            </div>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-file-invoice"></i>
+            <div class="info-content">
+                <strong>PENDING - 4 | NOT VERIFIED - 0</strong>
+                <small>• PAN Card • Aadhar Card<br>• Business License • 6 Months Bank Statement</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- CRM Main Grid -->
+    <div class="crm-main-grid">
+        <!-- User Details Panel -->
+        <div class="crm-card customer-card">
+            <div class="card-header blue-header">
+                <i class="fas fa-user-circle"></i>
+                <h3>User Details</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="card-body">
+                <div class="form-field">
+                    <label>Full Name <span class="required">*</span></label>
+                    <input type="text" placeholder="Enter full name">
+                </div>
+                <div class="form-field">
+                    <label>Father's Name</label>
+                    <input type="text" placeholder="Enter father's name">
+                </div>
+                <div class="form-field">
+                    <label>Phone Number <span class="required">*</span></label>
+                    <input type="number" value="1234567890" readonly style="background-color: #f0f0f0; cursor: not-allowed;">
+                </div>
+                <div class="form-field">
+                    <label>Email ID <span class="required">*</span></label>
+                    <input type="email" placeholder="Enter email">
+                </div>
+                <div class="form-field">
+                    <label>PAN Number <span class="required">*</span></label>
+                    <input type="text" placeholder="Enter PAN">
+                </div>
+                <div class="form-field">
+                    <label>Alternate Mobile Number</label>
+                    <input type="number" placeholder="Enter alternate number">
+                </div>
+                <div class="form-field">
+                    <label>WhatsApp Number</label>
+                    <input type="number" placeholder="Enter WhatsApp number">
+                </div>
+                <div class="form-field">
+                    <label>Aadhaar Linked Mobile Number</label>
+                    <input type="number" placeholder="Enter Aadhaar linked number">
+                </div>
+                <div class="form-field">
+                    <label>Gender</label>
+                    <select>
+                        <option>Select</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Custom</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label>Date of Birth</label>
+                    <input type="date">
+                </div>
+                <div class="form-field">
+                    <label>Flat No.</label>
+                    <input type="text" placeholder="Enter flat number">
+                </div>
+                <div class="form-field">
+                    <label>Building Name</label>
+                    <input type="text" placeholder="Enter building name">
+                </div>
+                <div class="form-field">
+                    <label>Area / Locality</label>
+                    <input type="text" placeholder="Enter area/locality">
+                </div>
+                <div class="form-field">
+                    <label>Pincode</label>
+                    <input type="number" id="pincode" placeholder="Enter pincode">
+                </div>
+                <div class="form-field">
+                    <label>City</label>
+                    <input type="text" id="city" placeholder="Enter city" readonly >
+                </div>
+                <div class="form-field">
+                    <label>State</label>
+                    <input type="text" id="state" placeholder="Enter state" readonly >
+                </div>
+                <div class="form-field">
+                    <label>Address Document Reference</label>
+                    <select>
+                        <option>Select</option>
+                        <option>Aadhaar Card</option>
+                        <option>Voter ID</option>
+                        <option>Driving License</option>
+                        <option>Passport</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label>Residence Ownership</label>
+                    <select>
+                        <option>Select</option>
+                        <option>Owned</option>
+                        <option>Rented</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label>Loan Amount</label>
+                    <input type="number" placeholder="Enter loan amount">
+                </div>
+                <div class="form-field">
+                    <label>Legal Status</label>
+                    <select>
+                        <option>Select</option>
+                        <option>Partnership</option>
+                        <option>Proprietorship</option>
+                        <option>Private Limited</option>
+                        <option>LLP</option>
+                        <option>OPC</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label>Number of Partners</label>
+                    <input type="number" placeholder="Enter number of partners">
+                </div>
+                <button class="btn-save">SAVE</button>
+            </div>
+        </div>
+
+        <!-- Business Details Panel -->
+        <div class="crm-card business-card">
+            <div class="card-header blue-header">
+                <h3>Business Details</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="card-body">
+                <div class="form-field">
+                    <label>Business Name <span class="required">*</span></label>
+                    <input type="text" placeholder="Enter business name">
+                </div>
+                <div class="form-field">
+                    <label>Business PAN</label>
+                    <input type="text" placeholder="Enter business PAN">
+                </div>
+                <div class="form-field">
+                    <label>Type of Business</label>
+                    <select>
+                        <option>Select</option>
+                        <option>Wholesaler</option>
+                        <option>Retailer</option>
+                        <option>Manufacturer</option>
+                        <option>Wholesaler + Retailer</option>
+                        <option>Service</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label>Product / Service</label>
+                    <div class="searchable-dropdown">
+                        <input type="text" id="productSearch" placeholder="Search product/service..." autocomplete="off">
+                        <div class="dropdown-list" id="productList"></div>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label>Flat No.</label>
+                    <input type="text" placeholder="Enter flat number">
+                </div>
+                <div class="form-field">
+                    <label>Building Name</label>
+                    <input type="text" placeholder="Enter building name">
+                </div>
+                <div class="form-field">
+                    <label>Area / Locality</label>
+                    <input type="text" placeholder="Enter area/locality">
+                </div>
+                <div class="form-field">
+                    <label>Business Pincode</label>
+                    <input type="number" id="businessPincode" placeholder="Enter pincode">
+                </div>
+                <div class="form-field">
+                    <label>Business City</label>
+                    <input type="text" id="businessCity" placeholder="Enter city" readonly >
+                </div>
+                <div class="form-field">
+                    <label>Business State</label>
+                    <input type="text" id="businessState" placeholder="Enter state" readonly >
+                </div>
+                <div class="form-field">
+                    <label>Address Document Reference</label>
+                    <select>
+                        <option>Select</option>
+                        <option>GST Certificate</option>
+                        <option>Trade License</option>
+                        <option>Drug License</option>
+                        <option>Food License</option>
+                        <option>Shops & Establishment Certificate</option>
+                        <option>Udyam Registration Certificate</option>
+                        <option>Company PAN Card</option>
+                        <option>ITR</option>
+                        <option>Rental Agreement</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label>Business Vintage</label>
+                    <input type="date">
+                </div>
+                <div class="form-field">
+                    <label>Business / Residence Ownership</label>
+                    <select>
+                        <option>Select</option>
+                        <option>Owned</option>
+                        <option>Rented</option>
+                    </select>
+                </div>
+                <button class="btn-save">SAVE</button>
+            </div>
+        </div>
+
+        <!-- Eligibility Calculator Panel -->
+        <div class="crm-card eligibility-card">
+            <div class="card-header blue-header">
+                <h3>Eligibility Calculator</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="card-body">
+                <div class="form-field">
+                    <label>Monthly Turnover <span class="required">*</span></label>
+                    <input type="text" value="">
+                </div>
+                <div class="form-field">
+                    <label>Margin Percentage <span class="required">*</span></label>
+                    <input type="text" value="">
+                </div>
+                <div class="form-field">
+                    <label>Current Obligations <span class="required">*</span></label>
+                    <input type="text" value="">
+                </div>
+                <button class="btn-calculate">SAVE</button>
+            </div>
+        </div>
+
+        <!-- Documents & Language Panel -->
+        <div class="crm-card docs-card">
+            <div class="card-body">
+                <div class="language-section">
+                    <h4>Language Barrier</h4>
+                    <div class="form-field">
+                        <label>Preferred Language</label>
+                        <select>
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Tamil</option>
+                            <option>Telugu</option>
+                        </select>
+                    </div>
+                    <button class="btn-save">SAVE</button>
+                </div>
+                <div class="remarks-section">
+                    <h4>Update Remarks</h4>
+                    <div class="remarks-display" id="remarksDisplay" style="display: none;"></div>
+                    <textarea placeholder="Enter remarks..." rows="3"></textarea>
+                    <div class="remarks-tags">
+                        <span class="tag">#Interested</span>
+                        <span class="tag">#AdditionalBankingSent</span>
+                        <span class="tag">#DocumentListsent</span>
+                        <span class="tag">#ConfirmationReceived</span>
+                        <span class="tag">#Collections</span>
+                        <span class="tag">#NotInterested</span>
+                        <span class="tag">#AppointmentFixed</span>
+                        <span class="tag">#NotConnect</span>
+                        <span class="tag">#others</span>
+                    </div>
+                    <button class="btn-update" disabled>UPDATE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-building"></i> About Flexi Loans</h3>
+                    <div class="company-info">
+                        <p>Flexi Loans is a leading NBFC specializing in unsecured business loans for SME/MSME since 2016.</p>
+                        <p>We provide ₹50K - ₹25L loans with 12-36 months tenure at competitive rates.</p>
+                        <p>Our 100% digital process ensures quick disbursal within 24-48 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <div class="quick-links">
+                        <a href="index.html#about" class="quick-link">
+                            <i class="fas fa-building"></i>
+                            <span>About Flexi Loans</span>
+                        </a>
+                        <a href="rbi-banking.html" class="quick-link">
+                            <i class="fas fa-university"></i>
+                            <span>RBI & Banking</span>
+                        </a>
+                        <a href="products.html" class="quick-link">
+                            <i class="fas fa-coins"></i>
+                            <span>Loan Products</span>
+                        </a>
+                        <a href="eligibility.html" class="quick-link">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Eligibility</span>
+                        </a>
+                        <a href="cibil-credit.html" class="quick-link">
+                            <i class="fas fa-chart-line"></i>
+                            <span>CIBIL Rules</span>
+                        </a>
+                        <a href="policies.html" class="quick-link">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Special Policies</span>
+                        </a>
+                        <a href="documents.html" class="quick-link">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Documents</span>
+                        </a>
+                        <a href="scripts.html" class="quick-link">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Scripts</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-text">
+                                Head Office
+                                7th Floor, One World Centre<br>
+                                Lower Parel, Mumbai - 400013
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                Established
+                                Since 2016<br>
+                                NBFC License Holder
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="contact-text">
+                                Specialization
+                                SME/MSME Business Loans<br>
+                                Unsecured Financing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="acknowledgment">
+                <h3><i class="fas fa-heart"></i> Special Acknowledgment</h3>
+                <p>Heartfelt gratitude to Mr. Sanath Sir (Sr. Trainer Vindhya) for providing this comprehensive training material and making this knowledge accessible to all Flexi Loans calling agents.</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>2026 Vishwajeet. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="scroll-to-top" id="scrollToTop" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Success Notification -->
+    <div id="successNotification" class="success-notification">
+        <i class="fas fa-check-circle"></i>
+        <span>Saved Successfully!</span>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Business profiles data from profiles.md
+        const businessProfiles = [
+            {name:'Abrasives & Grinding',risk:'green',label:'Doable'},{name:'Accounting',risk:'green',label:'Doable'},{name:'Advertising',risk:'green',label:'Doable'},{name:'Agarbatti',risk:'green',label:'Doable'},{name:'Agricultural Equipments',risk:'green',label:'Doable'},{name:'Appliance Repair Shops',risk:'green',label:'Doable'},{name:'Architect',risk:'green',label:'Doable'},{name:'Arms & Ammunition',risk:'green',label:'Doable'},{name:'Artificial Jewellery And Gems',risk:'green',label:'Doable'},{name:'Ayurvedic Products',risk:'green',label:'Doable'},{name:'Baby Care',risk:'green',label:'Doable'},{name:'Bags & Wallets',risk:'green',label:'Doable'},{name:'Bakery',risk:'green',label:'Doable'},{name:'Barber Shop',risk:'green',label:'Doable'},{name:'Bearings',risk:'green',label:'Doable'},{name:'Beauty Parlours',risk:'green',label:'Doable'},{name:'Bed',risk:'green',label:'Doable'},{name:'Bedsheets',risk:'green',label:'Doable'},{name:'Belts',risk:'green',label:'Doable'},{name:'Board Games / Video Games',risk:'green',label:'Doable'},{name:'Books',risk:'green',label:'Doable'},{name:'Boots',risk:'green',label:'Doable'},{name:'Bottled Water',risk:'green',label:'Doable'},{name:'Cabinets',risk:'green',label:'Doable'},{name:'Cameras',risk:'green',label:'Doable'},{name:'Cardboard Boxes',risk:'green',label:'Doable'},{name:'Carpets',risk:'green',label:'Doable'},{name:'Caterers',risk:'green',label:'Doable'},{name:'Chairs',risk:'green',label:'Doable'},{name:'Cheese',risk:'green',label:'Doable'},{name:'Chemical',risk:'green',label:'Doable'},{name:'Child Care Service',risk:'green',label:'Doable'},{name:'Cloud Kitchen',risk:'green',label:'Doable'},{name:'Coaching Classes',risk:'green',label:'Doable'},{name:'Compressors',risk:'green',label:'Doable'},{name:'Computer Peripherals',risk:'green',label:'Doable'},{name:'Computer Software',risk:'green',label:'Doable'},{name:'Computers & Laptops',risk:'green',label:'Doable'},{name:'Contact Lenses',risk:'green',label:'Doable'},{name:'Contractors (Govt)',risk:'green',label:'Doable'},{name:'Convex Mirrors',risk:'green',label:'Doable'},{name:'Copper Products',risk:'green',label:'Doable'},{name:'Cosmetics',risk:'green',label:'Doable'},{name:'Crystal & Glassware',risk:'green',label:'Doable'},{name:'Curtains',risk:'green',label:'Doable'},{name:'Cycle',risk:'green',label:'Doable'},{name:'Delivery Fleet',risk:'green',label:'Doable'},{name:'Dentists',risk:'green',label:'Doable'},{name:'Desk',risk:'green',label:'Doable'},{name:'Diwali Items',risk:'green',label:'Doable'},{name:'Doctors',risk:'green',label:'Doable'},{name:'Earphones',risk:'green',label:'Doable'},{name:'Electrical Goods & Fittings',risk:'green',label:'Doable'},{name:'Engineering Services',risk:'green',label:'Doable'},{name:'Festive Items',risk:'green',label:'Doable'},{name:'Fire Safety Products',risk:'green',label:'Doable'},{name:'FMCG Items',risk:'green',label:'Doable'},{name:'Food Truck',risk:'green',label:'Doable'},{name:'Footwear',risk:'green',label:'Doable'},{name:'Fridge',risk:'green',label:'Doable'},{name:'General Contractors',risk:'green',label:'Doable'},{name:'Gifts',risk:'green',label:'Doable'},{name:'Glassware',risk:'green',label:'Doable'},{name:'Gold Ornaments',risk:'green',label:'Doable'},{name:'Goods Transport Services',risk:'green',label:'Doable'},{name:'Government Contractor',risk:'green',label:'Doable'},{name:'Groceries',risk:'green',label:'Doable'},{name:'Gym Wear',risk:'green',label:'Doable'},{name:'Hardware',risk:'green',label:'Doable'},{name:'Healthcare Devices',risk:'green',label:'Doable'},{name:'Helmet',risk:'green',label:'Doable'},{name:'Hobby Classes',risk:'green',label:'Doable'},{name:'Holi Colours',risk:'green',label:'Doable'},{name:'Home Decor',risk:'green',label:'Doable'},{name:'Hotels',risk:'green',label:'Doable'},{name:'Ice Cream',risk:'green',label:'Doable'},{name:'Industrial Furnaces',risk:'green',label:'Doable'},{name:'Industrial Services',risk:'green',label:'Doable'},{name:'Inverters',risk:'green',label:'Doable'},{name:'Jackets',risk:'green',label:'Doable'},{name:'LED Lighting',risk:'green',label:'Doable'},{name:'LPG Agency',risk:'green',label:'Doable'},{name:'Lubricant & Oil',risk:'green',label:'Doable'},{name:'Machine Tools',risk:'green',label:'Doable'},{name:'Machinery Renting',risk:'green',label:'Doable'},{name:'Manpower (Skilled)',risk:'green',label:'Doable'},{name:'Medical Stores',risk:'green',label:'Doable'},{name:'Microwaves',risk:'green',label:'Doable'},{name:'Motors & Generators',risk:'green',label:'Doable'},{name:'Novelty & Souvenir',risk:'green',label:'Doable'},{name:'Nursing Care Facilities',risk:'green',label:'Doable'},{name:'Office Stationery',risk:'green',label:'Doable'},{name:'Optics',risk:'green',label:'Doable'},{name:'Orthodontists',risk:'green',label:'Doable'},{name:'Packaged Food',risk:'green',label:'Doable'},{name:'Paints & Varnishes',risk:'green',label:'Doable'},{name:'Paint Equipment',risk:'green',label:'Doable'},{name:'Paneer',risk:'green',label:'Doable'},{name:'Paper & Paper Products',risk:'green',label:'Doable'},{name:'Parlours',risk:'green',label:'Doable'},{name:'Party Items',risk:'green',label:'Doable'},{name:'Pathology Laboratory',risk:'green',label:'Doable'},{name:'Pen',risk:'green',label:'Doable'},{name:'Pencil',risk:'green',label:'Doable'},{name:'Personal Fitness Accessories',risk:'green',label:'Doable'},{name:'Pet Food',risk:'green',label:'Doable'},{name:'Pet Toys',risk:'green',label:'Doable'},{name:'Photography Studio',risk:'green',label:'Doable'},{name:'Pipes & Pipe Fittings',risk:'green',label:'Doable'},{name:'Plastic Products',risk:'green',label:'Doable'},{name:'Plywood',risk:'green',label:'Doable'},{name:'Pre Nursery Schools',risk:'green',label:'Doable'},{name:'Prime Movers',risk:'green',label:'Doable'},{name:'Printing & Publishing',risk:'green',label:'Doable'},{name:'Professional Equipment',risk:'green',label:'Doable'},{name:'Pumps',risk:'green',label:'Doable'},{name:'Radio Cassette',risk:'green',label:'Doable'},{name:'Raincoat',risk:'green',label:'Doable'},{name:'Rakhi',risk:'green',label:'Doable'},{name:'Ready Made Garments',risk:'green',label:'Doable'},{name:'Restaurant',risk:'green',label:'Doable'},{name:'Road Safety Equipment',risk:'green',label:'Doable'},{name:'Rubber Products',risk:'green',label:'Doable'},{name:'Rugs',risk:'green',label:'Doable'},{name:'Salons',risk:'green',label:'Doable'},{name:'Sanitaryware',risk:'green',label:'Doable'},{name:'Scanners',risk:'green',label:'Doable'},{name:'Schools',risk:'green',label:'Doable'},{name:'Shirts',risk:'green',label:'Doable'},{name:'Sinks',risk:'green',label:'Doable'},{name:'Solar Products',risk:'green',label:'Doable'},{name:'Spare Parts',risk:'green',label:'Doable'},{name:'Spectacles',risk:'green',label:'Doable'},{name:'Steel Tubes & Pipes',risk:'green',label:'Doable'},{name:'Storage & Warehousing',risk:'green',label:'Doable'},{name:'Suitcase',risk:'green',label:'Doable'},{name:'Sunglasses',risk:'green',label:'Doable'},{name:'Supermarket',risk:'green',label:'Doable'},{name:'Sweater',risk:'green',label:'Doable'},{name:'Sweet Shop',risk:'green',label:'Doable'},{name:'Tables',risk:'green',label:'Doable'},{name:'Tablets',risk:'green',label:'Doable'},{name:'Tiles',risk:'green',label:'Doable'},{name:'Traffic Safety Equipment',risk:'green',label:'Doable'},{name:'Transmission Line Towers',risk:'green',label:'Doable'},{name:'Tuitions',risk:'green',label:'Doable'},{name:'Turf & Parks',risk:'green',label:'Doable'},{name:'Turnkey Services',risk:'green',label:'Doable'},{name:'Tyres',risk:'green',label:'Doable'},{name:'Umbrella & Raincoat',risk:'green',label:'Doable'},{name:'Valves',risk:'green',label:'Doable'},{name:'Veterinary Supplies',risk:'green',label:'Doable'},{name:'Wallets & Travel Goods',risk:'green',label:'Doable'},{name:'Watches',risk:'green',label:'Doable'},{name:'Welding Machinery',risk:'green',label:'Doable'},{name:'Wheel Stopper',risk:'green',label:'Doable'},{name:'Wires & Cables',risk:'green',label:'Doable'},
+            {name:'Aluminium Products',risk:'orange',label:'Cautious'},{name:'Antiques',risk:'orange',label:'Cautious'},{name:'Art Dealers & Galleries',risk:'orange',label:'Cautious'},{name:'Bubble Wrap',risk:'orange',label:'Cautious'},{name:'Cab Service Provider',risk:'orange',label:'Cautious'},{name:'Cattle Feed',risk:'orange',label:'Cautious'},{name:'Clearing & Forwarding Agents',risk:'orange',label:'Cautious'},{name:'CNG Station',risk:'orange',label:'Cautious'},{name:'Coffee',risk:'orange',label:'Cautious'},{name:'Construction Materials',risk:'orange',label:'Cautious'},{name:'Courier',risk:'orange',label:'Cautious'},{name:'Cupboard',risk:'orange',label:'Cautious'},{name:'Customer Service Point Of Banks E Seva Kendra',risk:'orange',label:'Cautious'},{name:'Cycle Accessories',risk:'orange',label:'Cautious'},{name:'Dairy products',risk:'orange',label:'Cautious'},{name:'Diagnostic Centres',risk:'orange',label:'Cautious'},{name:'Dry Cleaners & Laundry',risk:'orange',label:'Cautious'},{name:'Dry Fruits',risk:'orange',label:'Cautious'},{name:'Egg Traders',risk:'orange',label:'Cautious'},{name:'Electrodes Graphite',risk:'orange',label:'Cautious'},{name:'Embroidery & Dyeing',risk:'orange',label:'Cautious'},{name:'Engines',risk:'orange',label:'Cautious'},{name:'Fabrications',risk:'orange',label:'Cautious'},{name:'Fast Food Studios',risk:'orange',label:'Cautious'},{name:'Fasteners',risk:'orange',label:'Cautious'},{name:'Fertilizers',risk:'orange',label:'Cautious'},{name:'Florists',risk:'orange',label:'Cautious'},{name:'Food Processing',risk:'orange',label:'Cautious'},{name:'Gems And Precious Stone',risk:'orange',label:'Cautious'},{name:'Handicrafts',risk:'orange',label:'Cautious'},{name:'Human Resource Agencies',risk:'orange',label:'Cautious'},{name:'Import & Export',risk:'orange',label:'Cautious'},{name:'Interior Designer',risk:'orange',label:'Cautious'},{name:'Lenses',risk:'orange',label:'Cautious'},{name:'Milk',risk:'orange',label:'Cautious'},{name:'Mobile Accessories',risk:'orange',label:'Cautious'},{name:'Mobile Phones',risk:'orange',label:'Cautious'},{name:'Motor Driving Schools',risk:'orange',label:'Cautious'},{name:'Musical Instrument',risk:'orange',label:'Cautious'},{name:'Passenger Transport',risk:'orange',label:'Cautious'},{name:'Pesticides',risk:'orange',label:'Cautious'},{name:'Petrol Pumps',risk:'orange',label:'Cautious'},{name:'Plastic Resins',risk:'orange',label:'Cautious'},{name:'Plastics Packaging Goods',risk:'orange',label:'Cautious'},{name:'Plumbing & Heating Equipment',risk:'orange',label:'Cautious'},{name:'Printing Machinery',risk:'orange',label:'Cautious'},{name:'Railway & Airline Ticket Booking',risk:'orange',label:'Cautious'},{name:'Real Jewellery And Gems',risk:'orange',label:'Cautious'},{name:'Silver Jewellery',risk:'orange',label:'Cautious'},{name:'Sports Wear',risk:'orange',label:'Cautious'},{name:'Steel Products',risk:'orange',label:'Cautious'},{name:'Storage Batteries',risk:'orange',label:'Cautious'},{name:'Surgical Equipements',risk:'orange',label:'Cautious'},{name:'Tea',risk:'orange',label:'Cautious'},{name:'Timber',risk:'orange',label:'Cautious'},{name:'Tour And Travel Services',risk:'orange',label:'Cautious'},{name:'Tours And Travel Agencies (Non Iata Certified)',risk:'orange',label:'Cautious'},{name:'Transformers',risk:'orange',label:'Cautious'},
+            {name:'Airlines Financing',risk:'blue',label:'Toxic'},{name:'Amusement Parks',risk:'blue',label:'Toxic'},{name:'Auditing',risk:'blue',label:'Toxic'},{name:'Bands & Orchestra',risk:'blue',label:'Toxic'},{name:'Bathroom And Toiletry',risk:'blue',label:'Toxic'},{name:'Bus Lines',risk:'blue',label:'Toxic'},{name:'Cab Services',risk:'blue',label:'Toxic'},{name:'Cable Operators',risk:'blue',label:'Toxic'},{name:'Call Centers',risk:'blue',label:'Toxic'},{name:'Camping',risk:'blue',label:'Toxic'},{name:'Carnivals',risk:'blue',label:'Toxic'},{name:'Charter Services',risk:'blue',label:'Toxic'},{name:'Chemicals',risk:'blue',label:'Toxic'},{name:'Clubs',risk:'blue',label:'Toxic'},{name:'Commission Agents',risk:'blue',label:'Toxic'},{name:'Construction Equipment',risk:'blue',label:'Toxic'},{name:'Consulting',risk:'blue',label:'Toxic'},{name:'Cotton',risk:'blue',label:'Toxic'},{name:'CSP Point',risk:'blue',label:'Toxic'},{name:'DTH',risk:'blue',label:'Toxic'},{name:'Dry Cleaners And Laundry Services',risk:'blue',label:'Toxic'},{name:'Entertainers',risk:'blue',label:'Toxic'},{name:'Event Management',risk:'blue',label:'Toxic'},{name:'Films',risk:'blue',label:'Toxic'},{name:'Finance Consultants',risk:'blue',label:'Toxic'},{name:'Fire Crackers',risk:'blue',label:'Toxic'},{name:'Flower shop',risk:'blue',label:'Toxic'},{name:'Freight Carriers',risk:'blue',label:'Toxic'},{name:'Garage And Workshops',risk:'blue',label:'Toxic'},{name:'Gems & Precious Stones',risk:'blue',label:'Toxic'},{name:'Gold Jewellery',risk:'blue',label:'Toxic'},{name:'Graphic Designer',risk:'blue',label:'Toxic'},{name:'Guest Houses',risk:'blue',label:'Toxic'},{name:'Gym Equipment',risk:'blue',label:'Toxic'},{name:'Holiday Packages',risk:'blue',label:'Toxic'},{name:'Homeopathy',risk:'blue',label:'Toxic'},{name:'Hospitals',risk:'blue',label:'Toxic'},{name:'Hostels',risk:'blue',label:'Toxic'},{name:'Industrial Gases',risk:'blue',label:'Toxic'},{name:'Internet Services',risk:'blue',label:'Toxic'},{name:'Jute',risk:'blue',label:'Toxic'},{name:'Manpower (Unskilled)',risk:'blue',label:'Toxic'},{name:'Marketing Company',risk:'blue',label:'Toxic'},{name:'Marriage Bureau',risk:'blue',label:'Toxic'},{name:'Massage Spa & Salon',risk:'blue',label:'Toxic'},{name:'Matrimonial Services',risk:'blue',label:'Toxic'},{name:'Mini ATM',risk:'blue',label:'Toxic'},{name:'Mining',risk:'blue',label:'Toxic'},{name:'Mobile Recharge',risk:'blue',label:'Toxic'},{name:'Movie Production & Distribution',risk:'blue',label:'Toxic'},{name:'Movie Theatres',risk:'blue',label:'Toxic'},{name:'News Paper Agencies',risk:'blue',label:'Toxic'},{name:'Online PAN / Aadhar Services',risk:'blue',label:'Toxic'},{name:'Personal Counseling',risk:'blue',label:'Toxic'},{name:'Petroleum Products',risk:'blue',label:'Toxic'},{name:'Petrochemicals',risk:'blue',label:'Toxic'},{name:'Photographers',risk:'blue',label:'Toxic'},{name:'Plastic Works',risk:'blue',label:'Toxic'},{name:'Plastic Tubes & Sheets',risk:'blue',label:'Toxic'},{name:'Polymers',risk:'blue',label:'Toxic'},{name:'Post Production & Animation',risk:'blue',label:'Toxic'},{name:'Print Media & Billboards',risk:'blue',label:'Toxic'},{name:'Public Relations',risk:'blue',label:'Toxic'},{name:'Railway And Airline Ticket Booking Services',risk:'blue',label:'Toxic'},{name:'Real Estate Agents',risk:'blue',label:'Toxic'},{name:'Real Jewellery',risk:'blue',label:'Toxic'},{name:'Restaurants',risk:'blue',label:'Toxic'},{name:'Scrap Dealer',risk:'blue',label:'Toxic'},{name:'Service Apartments',risk:'blue',label:'Toxic'},{name:'Share Broking',risk:'blue',label:'Toxic'},{name:'Soft Drinks',risk:'blue',label:'Toxic'},{name:'Spices',risk:'blue',label:'Toxic'},{name:'Sporting Goods',risk:'blue',label:'Toxic'},{name:'Tax Consultants',risk:'blue',label:'Toxic'},{name:'Telecome',risk:'blue',label:'Toxic'},{name:'Televisions',risk:'blue',label:'Toxic'},{name:'Tents Provider',risk:'blue',label:'Toxic'},{name:'Thread',risk:'blue',label:'Toxic'},{name:'Tour & Travel',risk:'blue',label:'Toxic'},{name:'Tour Buses',risk:'blue',label:'Toxic'},{name:'Tourist Attractions',risk:'blue',label:'Toxic'},{name:'Tourist Guides',risk:'blue',label:'Toxic'},{name:'Tours & Travel Agencies',risk:'blue',label:'Toxic'},{name:'Toys',risk:'blue',label:'Toxic'},{name:'Vegetable Commission Agents',risk:'blue',label:'Toxic'},{name:'Vehicle Rental',risk:'blue',label:'Toxic'},{name:'Water Transport',risk:'blue',label:'Toxic'},{name:'Wool',risk:'blue',label:'Toxic'},{name:'Yarn & Silk',risk:'blue',label:'Toxic'},
+            {name:'APMC Market',risk:'red',label:'Super Toxic'},{name:'Bangles Store',risk:'red',label:'Super Toxic'},{name:'Commercial Vehicles (LCV/HCV)',risk:'red',label:'Super Toxic'},{name:'Commodity Trader',risk:'red',label:'Super Toxic'},{name:'Customer Service Point Of Banks E Seva Kendra',risk:'red',label:'Super Toxic'},{name:'Edible Oils',risk:'red',label:'Super Toxic'},{name:'Fruit & Vegetable Shops',risk:'red',label:'Super Toxic'},{name:'Garage & Workshop',risk:'red',label:'Super Toxic'},{name:'Gym',risk:'red',label:'Super Toxic'},{name:'Hair Wig',risk:'red',label:'Super Toxic'},{name:'Leather Manufacturers',risk:'red',label:'Super Toxic'},{name:'Money Transfer',risk:'red',label:'Super Toxic'},{name:'Security Guards',risk:'red',label:'Super Toxic'},{name:'Tractors',risk:'red',label:'Super Toxic'},{name:'Two & Three Wheelers',risk:'red',label:'Super Toxic'},{name:'Used Automobile Dealer',risk:'red',label:'Super Toxic'}
+        ];
+
+        // Sort alphabetically
+        businessProfiles.sort((a, b) => a.name.localeCompare(b.name));
+
+        const searchInput = document.getElementById('productSearch');
+        const dropdownList = document.getElementById('productList');
+
+        // Render dropdown items
+        function renderDropdown(items) {
+            dropdownList.innerHTML = '';
+            items.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'dropdown-item';
+                div.innerHTML = `
+                    <span class="risk-${item.risk}">${item.name}</span>
+                    <span class="risk-badge badge-${item.risk}">${item.label}</span>
+                `;
+                div.addEventListener('click', () => {
+                    searchInput.value = item.name;
+                    dropdownList.classList.remove('show');
+                });
+                dropdownList.appendChild(div);
+            });
+        }
+
+        // Initial render
+        renderDropdown(businessProfiles);
+
+        // Search functionality
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filtered = businessProfiles.filter(item => 
+                item.name.toLowerCase().includes(searchTerm)
+            );
+            renderDropdown(filtered);
+            dropdownList.classList.add('show');
+        });
+
+        // Show dropdown on focus
+        searchInput.addEventListener('focus', () => {
+            dropdownList.classList.add('show');
+        });
+
+        // Hide dropdown on click outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.searchable-dropdown')) {
+                dropdownList.classList.remove('show');
+            }
+        });
+
+        // Toggle ownership button
+        function toggleOwnership() {
+            const btn = document.getElementById('ownBtn');
+            if (btn.classList.contains('owned')) {
+                btn.classList.remove('owned');
+                btn.innerHTML = '<i class="fas fa-hand-pointer"></i> Own Application';
+            } else {
+                btn.classList.add('owned');
+                btn.innerHTML = '<i class="fas fa-check-circle"></i> Owned by You';
+            }
+        }
+
+        // Handle all save buttons
+        document.querySelectorAll('.btn-save, .btn-calculate').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                showNotification();
+            });
+        });
+
+        // Handle UPDATE button separately
+        document.querySelector('.btn-update').addEventListener('click', function(e) {
+            e.preventDefault();
+            const textarea = document.querySelector('.remarks-section textarea');
+            const remarksDisplay = document.getElementById('remarksDisplay');
+            const selectedTag = document.querySelector('.tag.selected');
+            
+            let comment = textarea.value.trim();
+            let tag = selectedTag ? selectedTag.textContent : '';
+            
+            if (comment || tag) {
+                // Create new remark item
+                const remarkItem = document.createElement('div');
+                remarkItem.className = 'remark-item';
+                
+                let remarkHTML = '';
+                if (comment) {
+                    remarkHTML += `<div class="remark-comment">${comment}</div>`;
+                }
+                if (tag) {
+                    remarkHTML += `<span class="remark-tag">${tag}</span>`;
+                }
+                
+                remarkItem.innerHTML = remarkHTML;
+                
+                // Add to display (prepend to show newest on top)
+                remarksDisplay.insertBefore(remarkItem, remarksDisplay.firstChild);
+                remarksDisplay.style.display = 'block';
+                
+                // Clear inputs
+                textarea.value = '';
+                
+                // Clear all selected tags
+                document.querySelectorAll('.tag.selected').forEach(tag => {
+                    tag.classList.remove('selected');
+                });
+                
+                // Disable button again
+                this.disabled = true;
+                
+                showNotification();
+            }
+        });
+
+        // Handle remarks tags
+        document.querySelectorAll('.tag').forEach(tag => {
+            tag.addEventListener('click', function() {
+                const updateBtn = document.querySelector('.btn-update');
+                
+                // If clicking the same tag, deselect it
+                if (this.classList.contains('selected')) {
+                    this.classList.remove('selected');
+                    updateBtn.disabled = true;
+                } else {
+                    // Deselect all other tags first
+                    document.querySelectorAll('.tag.selected').forEach(t => t.classList.remove('selected'));
+                    
+                    // Select this tag
+                    this.classList.add('selected');
+                    updateBtn.disabled = false;
+                }
+            });
+        });
+
+        function showNotification() {
+            const notification = document.getElementById('successNotification');
+            notification.classList.add('show');
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 1500);
+        }
+
+        // Auto-fill city and state based on pincode using API
+        document.getElementById('pincode').addEventListener('input', async function() {
+            const pincode = this.value;
+            const cityField = document.getElementById('city');
+            const stateField = document.getElementById('state');
+            
+            if (pincode.length === 6) {
+                try {
+                    const response = await fetch(`https://api.postalpincode.in/pincode/${pincode}`);
+                    const data = await response.json();
+                    
+                    if (data[0].Status === 'Success' && data[0].PostOffice.length > 0) {
+                        const postOffice = data[0].PostOffice[0];
+                        cityField.value = postOffice.District;
+                        stateField.value = postOffice.State;
+                    } else {
+                        cityField.value = '';
+                        stateField.value = '';
+                    }
+                } catch (error) {
+                    console.error('Error fetching pincode data:', error);
+                    cityField.value = '';
+                    stateField.value = '';
+                }
+            } else {
+                cityField.value = '';
+                stateField.value = '';
+            }
+        });
+
+        // Auto-fill business city and state based on business pincode
+        document.getElementById('businessPincode').addEventListener('input', async function() {
+            const pincode = this.value;
+            const cityField = document.getElementById('businessCity');
+            const stateField = document.getElementById('businessState');
+            
+            if (pincode.length === 6) {
+                try {
+                    const response = await fetch(`https://api.postalpincode.in/pincode/${pincode}`);
+                    const data = await response.json();
+                    
+                    if (data[0].Status === 'Success' && data[0].PostOffice.length > 0) {
+                        const postOffice = data[0].PostOffice[0];
+                        cityField.value = postOffice.District;
+                        stateField.value = postOffice.State;
+                    } else {
+                        cityField.value = '';
+                        stateField.value = '';
+                    }
+                } catch (error) {
+                    console.error('Error fetching business pincode data:', error);
+                    cityField.value = '';
+                    stateField.value = '';
+                }
+            } else {
+                cityField.value = '';
+                stateField.value = '';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛡️ Special Policies - Flexi Loans Training</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="fav.png">
+</head>
+<body>
+        <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Flexi Loans" class="logo-img">
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-university"></i> Basics <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="rbi-banking.html" class="dropdown-item"><i class="fas fa-university"></i> RBI & Banking Fundamentals</a>
+                        <a href="products.html" class="dropdown-item"><i class="fas fa-coins"></i> Loan Products & Features</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-check-circle"></i> Eligibility <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="eligibility.html" class="dropdown-item"><i class="fas fa-check-circle"></i> Eligibility Criteria</a>
+                        <a href="cibil-credit.html" class="dropdown-item"><i class="fas fa-chart-line"></i> CIBIL & Credit Rules</a>
+                        <a href="policies.html" class="dropdown-item"><i class="fas fa-shield-alt"></i> Special Policies</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-exclamation-triangle"></i> Risk <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="business-types.html" class="dropdown-item"><i class="fas fa-briefcase"></i> Business Types & Risk</a>
+                        <a href="crm-system.html" class="dropdown-item"><i class="fas fa-users"></i> CRM Identity System</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-book"></i> Resources <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="documents.html" class="dropdown-item"><i class="fas fa-file-alt"></i> Documents & KYC</a>
+                        <a href="crm-practice.html" class="dropdown-item"><i class="fas fa-desktop"></i> CRM Practice</a>
+                        <a href="resources.html" class="dropdown-item"><i class="fas fa-book-open"></i> Resource (Training Material)</a>
+                        <a href="scripts.html" class="dropdown-item"><i class="fas fa-phone"></i> Calling Scripts</a>
+                        <a href="rebuttals.html" class="dropdown-item"><i class="fas fa-question-circle"></i> Rebuttals</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-clipboard-check"></i> Tests <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                                                <a href="testday1.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 1</a>
+                        <a href="testday2.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 2</a>
+                        <a href="testday3.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 3</a>
+                        <a href="testday4.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 4</a>
+                        <a href="testday5.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 5</a>
+                        <a href="testday6.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 6</a>
+                    </div>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-shield-alt"></i> Special Policies</h1>
+            <p>Comprehensive guide to all special policies and their requirements</p>
+        </div>
+    </section>
+
+    <!-- Policy Terminology -->
+    <section class="section">
+        <div class="container">
+            <h2><i class="fas fa-book"></i> Policy Terminology</h2>
+            
+            <div class="terminology-grid">
+                <div class="term-card">
+                    <a href="#ntc-policy" style="text-decoration: none; color: inherit;">
+                        <div class="term-abbr">NTC</div>
+                        <div class="term-full">New To CIBIL</div>
+                    </a>
+                </div>
+                
+                <div class="term-card">
+                    <a href="#toxic-policy" style="text-decoration: none; color: inherit;">
+                        <div class="term-abbr">Toxic</div>
+                        <div class="term-full">High-risk business</div>
+                    </a>
+                </div>
+                
+                <div class="term-card">
+                    <a href="#super-toxic-policy" style="text-decoration: none; color: inherit;">
+                        <div class="term-abbr">Super Toxic</div>
+                        <div class="term-full">Very high-risk business</div>
+                    </a>
+                </div>
+                
+                <div class="term-card">
+                    <a href="#plp-policy" style="text-decoration: none; color: inherit;">
+                        <div class="term-abbr">PLP</div>
+                        <div class="term-full">Personal Loan Policy</div>
+                    </a>
+                </div>
+                
+                <div class="term-card">
+                    <a href="#rco-policy" style="text-decoration: none; color: inherit;">
+                        <div class="term-abbr">RCO</div>
+                        <div class="term-full">Residence Cum Office</div>
+                    </a>
+                </div>
+                
+                <div class="term-card">
+                    <a href="#fap-policy" style="text-decoration: none; color: inherit;">
+                        <div class="term-abbr">FAP</div>
+                        <div class="term-full">Female Applicant Policy</div>
+                    </a>
+                </div>
+                
+                <div class="term-card">
+                    <a href="#delinquent-policy" style="text-decoration: none; color: inherit;">
+                        <div class="term-abbr">Delinquent</div>
+                        <div class="term-full">Special risky business category</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NTC Policy -->
+    <section class="section alt-bg" id="ntc-policy">
+        <div class="container">
+            <h2><i class="fas fa-user-plus"></i> NTC (New To CIBIL) Policy</h2>
+            
+            <div class="policy-card ntc">
+                <div class="policy-header ntc">
+                    <i class="fas fa-user-plus"></i>
+                    <h3>Customer with no CIBIL history</h3>
+                </div>
+                <div class="policy-content">
+                    <div class="amount-range">
+                        <div class="amount-value">₹50,000 to ₹5,00,000</div>
+                    </div>
+                    
+                    <h4><i class="fas fa-list-check"></i> Rules:</h4>
+                    <div class="rules-grid">
+                        <div class="rule-item">
+                            <i class="fas fa-times-circle text-danger"></i>
+                            <div class="rule-text">Must NOT be Toxic or Super Toxic business</div>
+                        </div>
+                        <div class="rule-item">
+                            <i class="fas fa-home"></i>
+                            <div class="rule-text">Business & residence both rented is NOT allowed (at least one must be owned)</div>
+                        </div>
+                        <div class="rule-item">
+                            <i class="fas fa-building"></i>
+                            <div class="rule-text">RCO cannot be rented — must be owned</div>
+                        </div>
+                        <div class="rule-item">
+                            <i class="fas fa-calendar"></i>
+                            <div class="rule-text">Business vintage: Minimum 3 years</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAP Policy -->
+    <section class="section" id="fap-policy">
+        <div class="container">
+            <h2><i class="fas fa-venus"></i> FAP - Female Applicant Policy</h2>
+            
+            <div class="policy-card fap">
+                <div class="policy-header fap">
+                    <i class="fas fa-venus"></i>
+                    <h3>Special policy for female applicants</h3>
+                </div>
+                <div class="policy-content">
+                    <div class="amount-range">
+                        <div class="amount-value">₹50,000 to ₹3,00,000</div>
+                    </div>
+                    
+                    <h4><i class="fas fa-users"></i> Co-applicant Rules:</h4>
+                    <div class="special-req">
+                        <h5>If requesting more than ₹3,00,000 → Co-applicant required</h5>
+                    </div>
+                    
+                    <div class="co-applicant-grid">
+                        <div class="co-applicant-card">
+                            <h5>Married Female</h5>
+                            <div class="co-applicant-options">
+                                <div class="co-option">Husband (Age 22-64)</div>
+                                <div class="co-option">Son (Age 22-64)</div>
+                            </div>
+                        </div>
+                        
+                        <div class="co-applicant-card">
+                            <h5>Unmarried Female</h5>
+                            <div class="co-applicant-options">
+                                <div class="co-option">Father (Age 22-64)</div>
+                                <div class="co-option">Brother (Age 22-64)</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="special-req">
+                        <h5>Special Rule: If female is NTC (New to CIBIL)</h5>
+                        <p>Even for less than ₹3 lakh, co-applicant is mandatory</p>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <i class="fas fa-file-alt"></i>
+                        <div class="rule-text">Co-applicant Documents: PAN & Aadhar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RCO Policy -->
+    <section class="section alt-bg" id="rco-policy">
+        <div class="container">
+            <h2><i class="fas fa-home"></i> RCO - Residence Cum Office Policy</h2>
+            
+            <div class="policy-card rco">
+                <div class="policy-header rco">
+                    <i class="fas fa-home"></i>
+                    <h3>When business and residence are in the same place</h3>
+                </div>
+                <div class="policy-content">
+                    <h4><i class="fas fa-list-check"></i> Rules:</h4>
+                    <div class="rules-grid">
+                        <div class="rule-item">
+                            <i class="fas fa-key"></i>
+                            <div class="rule-text">Must be owned (rented not allowed)</div>
+                        </div>
+                        <div class="rule-item">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <div class="rule-text">Allowed for all profiles (Green, Orange, Blue, Red)</div>
+                        </div>
+                    </div>
+                    
+                    <h4><i class="fas fa-question-circle"></i> Verification Questions:</h4>
+                    <div class="process-steps">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h5>Distance between home & business?</h5>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h5>Same entrance or separate?</h5>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h5>Same electricity bill or different?</h5>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h5>Whose name is the bill in?</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLP Policy -->
+    <section class="section" id="plp-policy">
+        <div class="container">
+            <h2><i class="fas fa-user"></i> PLP - Personal Loan Policy</h2>
+            
+            <div class="policy-card plp">
+                <div class="policy-header plp">
+                    <i class="fas fa-user"></i>
+                    <h3>For customers with no business proof</h3>
+                </div>
+                <div class="policy-content">
+                    <div class="amount-range">
+                        <div class="amount-value">₹50,000 to ₹5,00,000</div>
+                    </div>
+                    
+                    <h4><i class="fas fa-info-circle"></i> When to Use:</h4>
+                    <div class="rules-grid">
+                        <div class="rule-item">
+                            <i class="fas fa-times"></i>
+                            <div class="rule-text">Customer has no business proof</div>
+                        </div>
+                        <div class="rule-item">
+                            <i class="fas fa-check"></i>
+                            <div class="rule-text">But business is more than 3 years old</div>
+                        </div>
+                    </div>
+                    
+                    <h4><i class="fas fa-cogs"></i> Process:</h4>
+                    <div class="process-steps">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h5>Ask customer to register on Udyam</h5>
+                                <p>(15-20 minutes process)</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h5>If 0 vintage profile:</h5>
+                                <p>Take 2 years Current Account statement OR 2 years ITR</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="script-box">
+                        <h5>Script:</h5>
+                        <div class="script-text">
+                            "Maine details update kar di hai sir, please approval ka wait kijiye."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toxic Policy -->
+    <section class="section alt-bg" id="toxic-policy">
+        <div class="container">
+            <h2><i class="fas fa-exclamation-triangle"></i> Toxic Profile Policy</h2>
+            
+            <div class="policy-card toxic">
+                <div class="policy-header toxic">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>High-risk business category</h3>
+                </div>
+                <div class="policy-content">
+                    <div class="amount-range">
+                        <div class="amount-value">₹50,000 to ₹10,00,000</div>
+                    </div>
+                    
+                    <h4><i class="fas fa-list-check"></i> Requirements:</h4>
+                    <div class="requirements-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Criteria</th>
+                                    <th>Requirement</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>RCO</td>
+                                    <td>Rented NOT allowed — must be owned</td>
+                                </tr>
+                                <tr>
+                                    <td>Business & Residence</td>
+                                    <td>If different → at least one must be owned</td>
+                                </tr>
+                                <tr>
+                                    <td>Minimum CIBIL</td>
+                                    <td>720</td>
+                                </tr>
+                                <tr>
+                                    <td>Overdue</td>
+                                    <td>Must be less than ₹1000 (₹1000 not allowed)</td>
+                                </tr>
+                                <tr>
+                                    <td>ABB</td>
+                                    <td>Must be more than ₹15,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Business vintage</td>
+                                    <td>More than 2 years</td>
+                                </tr>
+                                <tr>
+                                    <td>Risk Grade</td>
+                                    <td>D or E not allowed</td>
+                                </tr>
+                                <tr>
+                                    <td>Pin code</td>
+                                    <td>Must be Green (Doable)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Super Toxic Policy -->
+    <section class="section" id="super-toxic-policy">
+        <div class="container">
+            <h2><i class="fas fa-skull-crossbones"></i> Super Toxic Profile Policy</h2>
+            
+            <div class="policy-card super-toxic">
+                <div class="policy-header super-toxic">
+                    <i class="fas fa-skull-crossbones"></i>
+                    <h3>Very high-risk business category</h3>
+                </div>
+                <div class="policy-content">
+                    <div class="amount-range">
+                        <div class="amount-value">₹50,000 to ₹25,00,000</div>
+                    </div>
+                    
+                    <h4><i class="fas fa-exclamation-circle"></i> Strict Requirements:</h4>
+                    <div class="critical-req">
+                        <h5>Critical Requirements</h5>
+                        <ul>
+                            <li>CIBIL: Must be 720-730 or more</li>
+                            <li>Risk Grade: D or E not allowed (Only A, B, C)</li>
+                            <li>ABB: ≥ ₹30,000</li>
+                            <li>BTO: ≥ ₹5,00,000</li>
+                            <li>RCO: Must be owned</li>
+                            <li>Pin code: Must be Green (Doable)</li>
+                            <li>Business vintage: More than 3 years</li>
+                        </ul>
+                    </div>
+                    
+                    <h4><i class="fas fa-check-circle"></i> Allowed Super Toxic Businesses:</h4>
+                    <div class="allowed-grid">
+                        <div class="allowed-item">
+                            <i class="fas fa-store"></i>
+                            <span>APMC market</span>
+                        </div>
+                        <div class="allowed-item">
+                            <i class="fas fa-apple-alt"></i>
+                            <span>Fruit shop</span>
+                        </div>
+                        <div class="allowed-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Commercial vehicles (LCV / HCV)</span>
+                        </div>
+                        <div class="allowed-item">
+                            <i class="fas fa-motorcycle"></i>
+                            <span>Two & three wheelers</span>
+                        </div>
+                        <div class="allowed-item">
+                            <i class="fas fa-car"></i>
+                            <span>Used automobile dealer</span>
+                        </div>
+                        <div class="allowed-item">
+                            <i class="fas fa-dumbbell"></i>
+                            <span>Gym</span>
+                        </div>
+                        <div class="allowed-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Commodity traders</span>
+                        </div>
+                        <div class="allowed-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security guards</span>
+                        </div>
+                        <div class="allowed-item">
+                            <i class="fas fa-tint"></i>
+                            <span>Edible / refined oils</span>
+                        </div>
+                        <div class="allowed-item">
+                            <i class="fas fa-wrench"></i>
+                            <span>Garage & workshop</span>
+                        </div>
+                        <div class="allowed-item">
+                            <i class="fas fa-tractor"></i>
+                            <span>Tractors</span>
+                        </div>
+                        <div class="allowed-item">
+                            <i class="fas fa-cut"></i>
+                            <span>Leather manufacturer</span>
+                        </div>
+                    </div>
+                    
+                    <div class="special-req">
+                        <h5>Special Note for Leather:</h5>
+                        <p>Must ask: leather from animals or from dealer?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delinquent Profile Policy -->
+    <section class="section alt-bg" id="delinquent-policy">
+        <div class="container">
+            <h2><i class="fas fa-exclamation"></i> Delinquent Profile Policy</h2>
+            
+            <div class="policy-card">
+                <div class="policy-header">
+                    <i class="fas fa-exclamation"></i>
+                    <h3>Special risky business category</h3>
+                </div>
+                <div class="policy-content">
+                    <div class="critical-req">
+                        <h5>Account Rule</h5>
+                        <p>Must have Current Account (CC or OD NOT allowed)</p>
+                    </div>
+                    
+                    <h4><i class="fas fa-list"></i> Delinquent Business Types:</h4>
+                    <div class="business-grid">
+                        <div class="business-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Courier</span>
+                        </div>
+                        <div class="business-item">
+                            <i class="fas fa-glass-whiskey"></i>
+                            <span>Soft drinks</span>
+                        </div>
+                        <div class="business-item">
+                            <i class="fas fa-tractor"></i>
+                            <span>Agriculture equipment</span>
+                        </div>
+                        <div class="business-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Processing</span>
+                        </div>
+                        <div class="business-item">
+                            <i class="fas fa-cube"></i>
+                            <span>Aluminium products</span>
+                        </div>
+                        <div class="business-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile accessories</span>
+                        </div>
+                        <div class="business-item">
+                            <i class="fas fa-spray-can"></i>
+                            <span>Pesticides</span>
+                        </div>
+                        <div class="business-item">
+                            <i class="fas fa-recycle"></i>
+                            <span>Scrap dealer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-building"></i> About Flexi Loans</h3>
+                    <div class="company-info">
+                        <p>Flexi Loans is a leading NBFC specializing in unsecured business loans for SME/MSME since 2016.</p>
+                        <p>We provide ₹50K - ₹25L loans with 12-36 months tenure at competitive rates.</p>
+                        <p>Our 100% digital process ensures quick disbursal within 24-48 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <div class="quick-links">
+                        <a href="index.html#about" class="quick-link">
+                            <i class="fas fa-building"></i>
+                            <span>About Flexi Loans</span>
+                        </a>
+                        <a href="rbi-banking.html" class="quick-link">
+                            <i class="fas fa-university"></i>
+                            <span>RBI & Banking</span>
+                        </a>
+                        <a href="products.html" class="quick-link">
+                            <i class="fas fa-coins"></i>
+                            <span>Loan Products</span>
+                        </a>
+                        <a href="eligibility.html" class="quick-link">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Eligibility</span>
+                        </a>
+                        <a href="cibil-credit.html" class="quick-link">
+                            <i class="fas fa-chart-line"></i>
+                            <span>CIBIL Rules</span>
+                        </a>
+                        <a href="policies.html" class="quick-link">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Special Policies</span>
+                        </a>
+                        <a href="documents.html" class="quick-link">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Documents</span>
+                        </a>
+                        <a href="scripts.html" class="quick-link">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Scripts</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-text">
+                                Head Office
+                                7th Floor, One World Centre<br>
+                                Lower Parel, Mumbai - 400013
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                Established
+                                Since 2016<br>
+                                NBFC License Holder
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="contact-text">
+                                Specialization
+                                SME/MSME Business Loans<br>
+                                Unsecured Financing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="acknowledgment">
+                <h3><i class="fas fa-heart"></i> Special Acknowledgment</h3>
+                <p>Heartfelt gratitude to Mr. Sanath Sir (Sr. Trainer Vindhya) for providing this comprehensive training material and making this knowledge accessible to all Flexi Loans calling agents.</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>2026 Vishwajeet. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="scroll-to-top" id="scrollToTop" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

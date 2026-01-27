@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Day 6 - Flexi Loans Training</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="fav.png">
+</head>
+<body>
+            <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Flexi Loans" class="logo-img">
+            </div>
+            <div class="nav-menu">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Password Modal -->
+    <div id="passwordModal" style="display: flex; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; align-items: center; justify-content: center;">
+        <div style="background: var(--bg-color); padding: 40px; border-radius: 20px; max-width: 400px; width: 90%; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+            <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 20px;"><i class="fas fa-lock"></i> Test Day 6</h2>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 25px;">Enter password to access the test</p>
+            <input type="password" id="passwordInput" placeholder="Enter password" style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 10px; font-size: 1rem; margin-bottom: 15px; background: var(--surface-color); color: var(--text-primary);">
+            <button onclick="checkPassword()" style="width: 100%; padding: 12px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; border: none; border-radius: 10px; font-size: 1rem; font-weight: 600; cursor: pointer; margin-bottom: 20px;">Unlock Test</button>            <p id="errorMsg" style="color: #ef4444; text-align: center; margin-top: 15px; display: none; font-weight: 600;">❌ Incorrect password!</p>
+        </div>
+    </div>
+
+
+    <!-- Test Section -->
+    <section class="section" id="testContent" style="padding-top: 100px; display: none;">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 30px;"><i class="fas fa-clipboard-check"></i> Test Day 6</h1>
+            <form id="testForm" name="Test Day 6" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="Test Day 6">
+            <input type="hidden" name="test-name" value="Test Day 6">
+            <input type="hidden" name="submission-time" id="submissionTime">
+            <p style="display: none;">
+                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            <div class="form-card">
+                <label>Full Name:-<span class="required">*</span></label>
+                <input type="text" name="fullName" placeholder="Your answer" required>
+            </div>
+
+            <div class="form-card">
+                <label>If the customer's PAN number series starts with "G", can we process the case in Sales Experiment? *<span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="q1_true" name="question1" value="True" required>
+                        <label for="q1_true">True</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="q1_false" name="question1" value="False" required>
+                        <label for="q1_false">False</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <label>Which probing question is correct for confirming the address during a customer call?*<span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="q2_opt1" name="question2" value="Sir/Madam, your residence address is available on Aadhaar card?" required>
+                        <label for="q2_opt1">Sir/Madam, your residence address is available on Aadhaar card?</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="q2_opt2" name="question2" value="Sir/Madam, your current residence address is available in which document such as Aadhaar card, Voter ID, or Driving License?" required>
+                        <label for="q2_opt2">Sir/Madam, your current residence address is available in which document such as Aadhaar card, Voter ID, or Driving License?</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <label>If the customer informs only the business registered year on call, is it mandatory to confirm the registration month as well?*<span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="q3_true" name="question3" value="True" required>
+                        <label for="q3_true">True</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="q3_false" name="question3" value="False" required>
+                        <label for="q3_false">False</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <label>In the female applicant policy, whom should we take as a co-applicant if the loan amount requirement exceeds ₹3 lakhs? If female is married ?*<span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="q4_husband" name="question4" value="Husband" required>
+                        <label for="q4_husband">Husband</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="q4_father" name="question4" value="Father" required>
+                        <label for="q4_father">Father</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="q4_brother" name="question4" value="Brother" required>
+                        <label for="q4_brother">Brother</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <label>If a customer wants the loan amount credited to his brother's bank account, can we process the case?*<span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="q5_true" name="question5" value="True" required>
+                        <label for="q5_true">True</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="q5_false" name="question5" value="False" required>
+                        <label for="q5_false">False</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <label>If a customer requests a call back, which disposition should be selected?*<span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="q6_followup" name="question6" value="Follow Up" required>
+                        <label for="q6_followup">Follow Up</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="q6_callback" name="question6" value="General Call Back" required>
+                        <label for="q6_callback">General Call Back</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <label>Is it mandatory to capture the landmark and update it on OPC?*<span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="q7_yes" name="question7" value="Yes" required>
+                        <label for="q7_yes">Yes</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="q7_no" name="question7" value="No" required>
+                        <label for="q7_no">No</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="q7_maybe" name="question7" value="Maybe" required>
+                        <label for="q7_maybe">Maybe</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <label>What rate of interest should be offered to a customer in risk category B when the case is processed under the sales experiment?  *<span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="q8_opt1" name="question8" value="1.25% Flat PM (15% Flat Per Annum)" required>
+                        <label for="q8_opt1">1.25% Flat PM (15% Flat Per Annum)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="q8_opt2" name="question8" value="1.35% Flat PM (16.2% flat Per Annum)" required>
+                        <label for="q8_opt2">1.35% Flat PM (16.2% flat Per Annum)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="q8_opt3" name="question8" value="1.5% Flat PM (18% Flat Per Annum)" required>
+                        <label for="q8_opt3">1.5% Flat PM (18% Flat Per Annum)</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <label>If the customer's ABB is 13,384 and the risk category is A, but the application reflects "Credit Rejection – ABB below norms," can we process this case under the sales experiment?*<span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="q9_yes" name="question9" value="Yes" required>
+                        <label for="q9_yes">Yes</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="q9_no" name="question9" value="No" required>
+                        <label for="q9_no">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <label>If the customer is not doing any business, where we can reject the application.*<span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="q10_opt1" name="question10" value="Salaried applicant" required>
+                        <label for="q10_opt1">Salaried applicant</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="q10_opt2" name="question10" value="No Current account" required>
+                        <label for="q10_opt2">No Current account</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="q10_opt3" name="question10" value="No BKYC" required>
+                        <label for="q10_opt3">No BKYC</label>
+                    </div>
+                </div>
+            </div>
+
+                <div class="form-card">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-building"></i> About Flexi Loans</h3>
+                    <div class="company-info">
+                        <p>Flexi Loans is a leading NBFC specializing in unsecured business loans for SME/MSME since 2016.</p>
+                        <p>We provide ₹50K - ₹25L loans with 12-36 months tenure at competitive rates.</p>
+                        <p>Our 100% digital process ensures quick disbursal within 24-48 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <div class="quick-links">
+                        <a href="index.html#about" class="quick-link">
+                            <i class="fas fa-building"></i>
+                            <span>About Flexi Loans</span>
+                        </a>
+                        <a href="rbi-banking.html" class="quick-link">
+                            <i class="fas fa-university"></i>
+                            <span>RBI & Banking</span>
+                        </a>
+                        <a href="products.html" class="quick-link">
+                            <i class="fas fa-coins"></i>
+                            <span>Loan Products</span>
+                        </a>
+                        <a href="eligibility.html" class="quick-link">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Eligibility</span>
+                        </a>
+                        <a href="cibil-credit.html" class="quick-link">
+                            <i class="fas fa-chart-line"></i>
+                            <span>CIBIL Rules</span>
+                        </a>
+                        <a href="policies.html" class="quick-link">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Special Policies</span>
+                        </a>
+                        <a href="documents.html" class="quick-link">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Documents</span>
+                        </a>
+                        <a href="scripts.html" class="quick-link">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Scripts</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-text">
+                                Head Office
+                                7th Floor, One World Centre<br>
+                                Lower Parel, Mumbai - 400013
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                Established
+                                Since 2016<br>
+                                NBFC License Holder
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="contact-text">
+                                Specialization
+                                SME/MSME Business Loans<br>
+                                Unsecured Financing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="acknowledgment">
+                <h3><i class="fas fa-heart"></i> Special Acknowledgment</h3>
+                <p>Heartfelt gratitude to Mr. Sanath Sir (Sr. Trainer Vindhya) for providing this comprehensive training material and making this knowledge accessible to all Flexi Loans calling agents.</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>2026 Vishwajeet. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="scroll-to-top" id="scrollToTop" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="script.js?v=1768580322883"></script>
+    
+    
+    
+    
+    <script>
+        initTestPage('t6', 'Test Day 6');
+        
+        const form = document.getElementById('testForm');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(form);
+                const answers = {};
+                let studentName = '';
+                
+                for (let [key, value] of formData.entries()) {
+                    if (key === 'fullName' || key === 'Full Name') {
+                        studentName = value;
+                    }
+                    if (key !== 'bot-field' && key !== 'form-name' && key !== 'test-name' && key !== 'submission-time') {
+                        answers[key] = value;
+                    }
+                }
+                
+                // Prepare data for Google Sheets
+                const sheetData = {
+                    testName: 'Test Day 6',
+                    studentName: studentName || 'Unknown',
+                    timestamp: new Date().toISOString(),
+                    answers: answers
+                };
+                
+                // Show loading message
+                const submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('.submit-btn');
+                if (submitBtn) {
+                    const originalText = submitBtn.textContent;
+                    submitBtn.textContent = '⏳ Submitting...';
+                    submitBtn.disabled = true;
+                    
+                    // Send to Google Sheets
+                    fetch('https://script.google.com/macros/s/AKfycbx41ecjaHtrTfBQkqpKFGOwdI4vBFI_zXoosuZ__wOpXBpDbXY6D78VRCyMuSjOXH2dBA/exec', {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(sheetData)
+                    })
+                    .then(() => {
+                        alert('✅ Test submitted successfully!\n\nYour answers have been recorded in Google Sheets.');
+                        form.reset();
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                        alert('✅ Test submitted!\n\n(Note: Due to browser security, we cannot confirm delivery, but your answers have been sent to Google Sheets)');
+                        form.reset();
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
