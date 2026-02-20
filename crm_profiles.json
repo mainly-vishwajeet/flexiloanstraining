@@ -1,0 +1,81 @@
+{
+  "business_risk_profiles": {
+    "doable": [
+      "Gold Ornaments",
+      "Chemical",
+      "Restaurant",
+      "Hotels"
+    ],
+    "cautious": [
+      "Construction Materials",
+      "Printing Machinery",
+      "Plastics Packaging Goods",
+      "Aluminium Products",
+      "Storage Batteries",
+      "Dairy products",
+      "Handicrafts",
+      "Interior Designer",
+      "Courier",
+      "Food Processing",
+      "Fast Food Studios",
+      "Transformers",
+      "Dry Fruits",
+      "Fasteners",
+      "Plumbing & Heating Equipment",
+      "Cupboard",
+      "Engines",
+      "Electrodes Graphite",
+      "Bubble Wrap",
+      "Lenses",
+      "Cng Station",
+      "Motor Driving Schools",
+      "Tour And Travel Services",
+      "Pesticides",
+      "Milk",
+      "Real Jewellery And Gems",
+      "Sports Wear",
+      "Gems And Precious Stone",
+      "Diagnostic Centres",
+      "Surgical Equipements",
+      "Egg Traders",
+      "Cycle Accessories",
+      "Musical Instrument",
+      "Tours And Travel Agencies (Non Iata Certified)",
+      "Passenger Transport",
+      "Cab Service Provider"
+    ],
+    "toxic": [
+      "Televisions",
+      "Soft Drinks",
+      "Thread",
+      "Sporting Goods",
+      "Hospitals",
+      "Freight Carriers",
+      "Graphic Designer",
+      "Spices",
+      "Toys",
+      "Telecome",
+      "Petroleum Products",
+      "Edible Oils",
+      "Bathroom And Toiletry",
+      "DTH",
+      "Dry Cleaners And Laundry Services",
+      "Railway And Airline Ticket Booking Services",
+      "Gym Equipment",
+      "Flower shop",
+      "Garage And Workshops"
+    ],
+    "super_toxic": [
+      "Bangles Store",
+      "Hair Wig",
+      "Money Transfer",
+      "Customer Service Point Of Banks E Seva Kendra"
+    ]
+  },
+  "risk_color_mapping": {
+    "doable": "green",
+    "cautious": "orange", 
+    "toxic": "blue",
+    "super_toxic": "red"
+  }
+}

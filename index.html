@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexi Loans Training Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="fav.png">
+</head>
+<body>
+        <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Flexi Loans" class="logo-img">
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-university"></i> Basics <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="rbi-banking.html" class="dropdown-item"><i class="fas fa-university"></i> RBI & Banking Fundamentals</a>
+                        <a href="products.html" class="dropdown-item"><i class="fas fa-coins"></i> Loan Products & Features</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-check-circle"></i> Eligibility <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="eligibility.html" class="dropdown-item"><i class="fas fa-check-circle"></i> Eligibility Criteria</a>
+                        <a href="cibil-credit.html" class="dropdown-item"><i class="fas fa-chart-line"></i> CIBIL & Credit Rules</a>
+                        <a href="policies.html" class="dropdown-item"><i class="fas fa-shield-alt"></i> Special Policies</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-exclamation-triangle"></i> Risk <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="business-types.html" class="dropdown-item"><i class="fas fa-briefcase"></i> Business Types & Risk</a>
+                        <a href="crm-system.html" class="dropdown-item"><i class="fas fa-users"></i> CRM Identity System</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-book"></i> Resources <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="documents.html" class="dropdown-item"><i class="fas fa-file-alt"></i> Documents & KYC</a>
+                        <a href="crm-practice.html" class="dropdown-item"><i class="fas fa-desktop"></i> CRM Practice</a>
+                        <a href="resources.html" class="dropdown-item"><i class="fas fa-book-open"></i> Resource (Training Material)</a>
+                        <a href="scripts.html" class="dropdown-item"><i class="fas fa-phone"></i> Calling Scripts</a>
+                        <a href="rebuttals.html" class="dropdown-item"><i class="fas fa-question-circle"></i> Rebuttals</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-clipboard-check"></i> Tests <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                                                <a href="testday1.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 1</a>
+                        <a href="testday2.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 2</a>
+                        <a href="testday3.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 3</a>
+                        <a href="testday4.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 4</a>
+                        <a href="testday5.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 5</a>
+                        <a href="testday6.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 6</a>
+                    </div>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>📚 Flexi Loans Training Guide</h1>
+                <p>Complete training notes for Flexi Loans calling agents. All concepts organized by topics for easy reference.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-coins"></i>
+                        <span>₹50K - ₹25L</span>
+                        <small>Loan Amount</small>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>24-48 Hours</span>
+                        <small>Quick Disbursal</small>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-percentage"></i>
+                        <span>Flat 1-2%</span>
+                        <small>Monthly Interest</small>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>100%</span>
+                        <small>Digital Process</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2><i class="fas fa-building"></i> About Flexi Loans</h2>
+            
+            <div class="content-card detailed">
+                <h3><i class="fas fa-info-circle"></i> Company Information</h3>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h4>Founded</h4>
+                        <p>2016</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Company Type</h4>
+                        <p>NBFC<br>(Non-Banking Financial Company)</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-star"></i>
+                        <h4>Specialization</h4>
+                        <p>Unsecured Business Loans<br>for SME/MSME</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card detailed">
+                <h3><i class="fas fa-map-marker-alt"></i> Head Office Address</h3>
+                <div class="address-card">
+                    <p>Flexi Loans<br>
+                    7th Floor, South Annexe, Tower 2<br>
+                    One World Centre<br>
+                    841, Senapati Bapat Marg<br>
+                    Saidham Nagar, Lower Parel<br>
+                    Mumbai – 400013</p>
+                    <div class="highlight-box">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Important: This is the only office location
+                    </div>
+                </div>
+            </div>
+                <!-- <div class="content-card detailed">
+                <h3><i class="fas fa-info-circle"></i> Basic Information</h3>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <i class="rupees-symbol"></i>
+                        <h4>₹50K - ₹25L</h4>
+                        <p>Loan Amount</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-calendar"></i>
+                        <h4>12-36 Months</h4>
+                        <p>Tenure</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-percentage"></i>
+                        <h4>1-2% Monthly</h4>
+                        <p>Flat Interest Rate</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Quick Reference Section -->
+    <section class="section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-tachometer-alt"></i> Quick Reference Summary</h2>
+            
+            <div class="quick-ref-grid">
+                <div class="quick-card">
+                    <h3><i class="fas fa-coins"></i> Loan Quick Facts</h3>
+                    <ul>
+                        <li>Amount: ₹50K - ₹25L</li>
+                        <li>Tenure: 12-36 months</li>
+                        <li>Interest:Flat Rate 1-2% monthly (12-24% annual)</li>
+                        <li>Processing: 2.5% + 18% GST</li>
+                        <li>Disbursal: 24-48 hours</li>
+                    </ul>
+                </div>
+                
+                <div class="quick-card">
+                    <h3><i class="fas fa-check-circle"></i> Eligibility Quick Check</h3>
+                    <ul>
+                        <li>Age: 22-64</li>
+                        <li>Account: CA/CC/OD</li>
+                        <li>BTO: ₹2L+ (preferred)</li>
+                        <li>ABB: ₹15K-₹45K</li>
+                        <li>Vintage: 2+ years</li>
+                        <li>CIBIL: 700+ (720+ for Toxic & Supertoxic)</li>
+                    </ul>
+                </div>
+                
+                <div class="quick-card rejection">
+                    <h3><i class="fas fa-times-circle"></i> Red Flags (Rejection)</h3>
+                    <ul>
+                        <li>❌ Vintage < 1 year</li>
+                        <li>❌ BTO < ₹1 lakh</li>
+                        <li>❌ ABB < ₹15K on EMI dates</li>
+                        <li>❌ Overdue ≥ ₹1000</li>
+                        <li>❌ Bounces > 2/month or 20/year</li>
+                        <li>❌ Due past date(DPD) > 10 days</li>
+                        <li>❌ Risk Grade D or E (for toxic)</li>
+                        <li>❌ Savings Account only</li>
+                        <li>❌ Multiple gold loans</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CIBIL Section -->
+    <section id="cibil" class="section">
+        <div class="container">
+            <h2><i class="fas fa-chart-line"></i> CIBIL & Credit Rules</h2>
+            <div class="cibil-grid">
+                <div class="cibil-card excellent">
+                    <h3>700 - 900</h3>
+                    <p>Excellent</p>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="cibil-card good">
+                    <h3>500 - 700</h3>
+                    <p>Good</p>
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+                <div class="cibil-card average">
+                    <h3>300 - 500</h3>
+                    <p>Average</p>
+                    <i class="fas fa-minus"></i>
+                </div>
+                <div class="cibil-card poor">
+                    <h3>0 - 300</h3>
+                    <p>Poor</p>
+                    <i class="fas fa-thumbs-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documents" class="section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-file-alt"></i> Documents & KYC</h2>
+            <div class="doc-grid">
+                <div class="doc-card">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Individual KYC</h3>
+                    <ul>
+                        <li>Aadhar Card</li>
+                        <li>PAN Card</li>
+                        <li>Voter ID</li>
+                        <li>Passport</li>
+                    </ul>
+                </div>
+                <div class="doc-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Address Proof</h3>
+                    <ul>
+                        <li>Electricity Bill + Aadhar</li>
+                        <li>Water Bill + Aadhar</li>
+                        <li>Rent Agreement (if rented)</li>
+                        <li>Property Sale Deed (if owned)</li>
+                    </ul>
+                </div>
+                <div class="doc-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Business Proof</h3>
+                    <ul>
+                        <li>GST Certificate</li>
+                        <li>Trade License</li>
+                        <li>Udyam Registration</li>
+                        <li>6 Months Bank Statement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="section">
+        <div class="container">
+            <h2><i class="fas fa-book"></i> Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Documents & KYC</h3>
+                    <p>Complete guide to required documents</p>
+                    <a href="documents.html" class="btn-primary">View Documents</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Calling Scripts</h3>
+                    <p>Professional calling scripts</p>
+                    <a href="scripts.html" class="btn-primary">View Scripts</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-download"></i>
+                    <h3>All Resources</h3>
+                    <p>Access all training materials & Files</p>
+                    <a href="resources.html" class="btn-primary">View All</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-building"></i> About Flexi Loans</h3>
+                    <div class="company-info">
+                        <p>Flexi Loans is a leading NBFC specializing in unsecured business loans for SME/MSME since 2016.</p>
+                        <p>We provide ₹50K - ₹25L loans with 12-36 months tenure at competitive rates.</p>
+                        <p>Our 100% digital process ensures quick disbursal within 24-48 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <div class="quick-links">
+                        <a href="index.html#about" class="quick-link">
+                            <i class="fas fa-building"></i>
+                            <span>About Flexi Loans</span>
+                        </a>
+                        <a href="rbi-banking.html" class="quick-link">
+                            <i class="fas fa-university"></i>
+                            <span>RBI & Banking</span>
+                        </a>
+                        <a href="products.html" class="quick-link">
+                            <i class="fas fa-coins"></i>
+                            <span>Loan Products</span>
+                        </a>
+                        <a href="eligibility.html" class="quick-link">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Eligibility</span>
+                        </a>
+                        <a href="cibil-credit.html" class="quick-link">
+                            <i class="fas fa-chart-line"></i>
+                            <span>CIBIL Rules</span>
+                        </a>
+                        <a href="policies.html" class="quick-link">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Special Policies</span>
+                        </a>
+                        <a href="documents.html" class="quick-link">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Documents</span>
+                        </a>
+                        <a href="scripts.html" class="quick-link">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Scripts</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-text">
+                                Head Office
+                                7th Floor, One World Centre<br>
+                                Lower Parel, Mumbai - 400013
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                Established
+                                Since 2016<br>
+                                NBFC License Holder
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="contact-text">
+                                Specialization
+                                SME/MSME Business Loans<br>
+                                Unsecured Financing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="acknowledgment">
+                <h3><i class="fas fa-heart"></i> Special Acknowledgment</h3>
+                <p>Heartfelt gratitude to Mr. Sanath Sir (Sr. Trainer Vindhya) for providing this comprehensive training material and making this knowledge accessible to all Flexi Loans calling agents.</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>2026 Vishwajeet. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="scroll-to-top" id="scrollToTop" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

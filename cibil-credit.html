@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📊 CIBIL & Credit Rules - Flexi Loans Training</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="fav.png">
+</head>
+<body>
+        <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Flexi Loans" class="logo-img">
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-university"></i> Basics <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="rbi-banking.html" class="dropdown-item"><i class="fas fa-university"></i> RBI & Banking Fundamentals</a>
+                        <a href="products.html" class="dropdown-item"><i class="fas fa-coins"></i> Loan Products & Features</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-check-circle"></i> Eligibility <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="eligibility.html" class="dropdown-item"><i class="fas fa-check-circle"></i> Eligibility Criteria</a>
+                        <a href="cibil-credit.html" class="dropdown-item"><i class="fas fa-chart-line"></i> CIBIL & Credit Rules</a>
+                        <a href="policies.html" class="dropdown-item"><i class="fas fa-shield-alt"></i> Special Policies</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-exclamation-triangle"></i> Risk <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="business-types.html" class="dropdown-item"><i class="fas fa-briefcase"></i> Business Types & Risk</a>
+                        <a href="crm-system.html" class="dropdown-item"><i class="fas fa-users"></i> CRM Identity System</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-book"></i> Resources <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="documents.html" class="dropdown-item"><i class="fas fa-file-alt"></i> Documents & KYC</a>
+                        <a href="crm-practice.html" class="dropdown-item"><i class="fas fa-desktop"></i> CRM Practice</a>
+                        <a href="resources.html" class="dropdown-item"><i class="fas fa-book-open"></i> Resource (Training Material)</a>
+                        <a href="scripts.html" class="dropdown-item"><i class="fas fa-phone"></i> Calling Scripts</a>
+                        <a href="rebuttals.html" class="dropdown-item"><i class="fas fa-question-circle"></i> Rebuttals</a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-clipboard-check"></i> Tests <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                                                <a href="testday1.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 1</a>
+                        <a href="testday2.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 2</a>
+                        <a href="testday3.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 3</a>
+                        <a href="testday4.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 4</a>
+                        <a href="testday5.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 5</a>
+                        <a href="testday6.html" class="dropdown-item"><i class="fas fa-edit"></i> Test Day 6</a>
+                    </div>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-chart-line"></i> CIBIL & Credit Rules</h1>
+            <p>Understanding credit scores, rejection engines, and risk assessment</p>
+        </div>
+    </section>
+
+    <!-- CIBIL Score Range -->
+    <section class="section">
+        <div class="container">
+            <h2><i class="fas fa-chart-bar"></i> CIBIL Score Range</h2>
+            
+            <div class="cibil-range-grid">
+                <div class="cibil-range-card ntc">
+                    <div class="score-header">
+                        <div class="score-value">-1</div>
+                        <div class="score-label">NTC</div>
+                    </div>
+                    <div class="score-details">
+                        <div class="category">New to CIBIL</div>
+                        <div class="status special">Special Policy</div>
+                        <div class="description">Customer has no credit history</div>
+                    </div>
+                </div>
+                
+                <div class="cibil-range-card very-poor">
+                    <div class="score-header">
+                        <div class="score-value">0 - 300</div>
+                        <div class="score-label">Bad</div>
+                    </div>
+                    <div class="score-details">
+                        <div class="category">Very Poor</div>
+                        <div class="status poor">High Risk</div>
+                        <div class="description">Significant credit issues</div>
+                    </div>
+                </div>
+                
+                <div class="cibil-range-card below-average">
+                    <div class="score-header">
+                        <div class="score-value">300 - 500</div>
+                        <div class="score-label">Average</div>
+                    </div>
+                    <div class="score-details">
+                        <div class="category">Below Average</div>
+                        <div class="status average">Moderate Risk</div>
+                        <div class="description">Some credit challenges</div>
+                    </div>
+                </div>
+                
+                <div class="cibil-range-card good">
+                    <div class="score-header">
+                        <div class="score-value">500 - 700</div>
+                        <div class="score-label">Good</div>
+                    </div>
+                    <div class="score-details">
+                        <div class="category">Good</div>
+                        <div class="status good">Low Risk</div>
+                        <div class="description">Decent credit behavior</div>
+                    </div>
+                </div>
+                
+                <div class="cibil-range-card excellent">
+                    <div class="score-header">
+                        <div class="score-value">700 - 900</div>
+                        <div class="score-label">Excellent</div>
+                    </div>
+                    <div class="score-details">
+                        <div class="category">Excellent</div>
+                        <div class="status excellent">Very Low Risk</div>
+                        <div class="description">Outstanding credit history</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="important-note">
+                <i class="fas fa-clock"></i>
+                Important: CIBIL and related data updates every 45 days
+            </div>
+        </div>
+    </section>
+
+    <!-- Loan Rejection Engines -->
+    <section class="section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-cogs"></i> Loan Rejection Engines</h2>
+            
+            <div class="engines-intro">
+                <p>Two main engines cause loan rejection:</p>
+            </div>
+            
+            <div class="engines-grid">
+                <!-- BRE Engine -->
+                <div class="engine-card">
+                    <div class="engine-header">
+                        <i class="fas fa-university"></i>
+                        <h3>1. BRE (Banking Rule Engine)</h3>
+                    </div>
+                    
+                    <div class="engine-content">
+                        <div class="check-section">
+                            <h4><i class="fas fa-exchange-alt"></i> BTO (Monthly Transactions)</h4>
+                            <div class="check-rules">
+                                <div class="rule-item success">
+                                    <span class="rule-condition">₹2 lakh or more</span>
+                                    <span class="rule-result">→ Eligible</span>
+                                </div>
+                                <div class="rule-item warning">
+                                    <span class="rule-condition">₹1 lakh to ₹2 lakh</span>
+                                    <span class="rule-result">→ Review needed</span>
+                                </div>
+                                <div class="rule-item danger">
+                                    <span class="rule-condition">Less than ₹1 lakh</span>
+                                    <span class="rule-result">→ Rejected</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="check-section">
+                            <h4><i class="fas fa-wallet"></i> ABB (Average Bank Balance)</h4>
+                            <div class="abb-details">
+                                <ul>
+                                    <li>Range: ₹15,000 - ₹45,000</li>
+                                    <li>Based on: Last 6 months bank statement</li>
+                                    <li>Requirement: Minimum 3+ new customer transactions per month</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="check-section">
+                            <h4><i class="fas fa-calendar-check"></i> EMI Date Check</h4>
+                            <div class="emi-check-details">
+                                <div class="common-dates-display">
+                                    Common dates:
+                                    <span class="date-tag">1</span>
+                                    <span class="date-tag">5</span>
+                                    <span class="date-tag">16</span>
+                                    <span class="date-tag">25</span>
+                                </div>
+                                <div class="rejection-rule">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    If ABB falls below 50% on these dates → Rejected
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CRE Engine -->
+                <div class="engine-card">
+                    <div class="engine-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>2. CRE (Credit Rule Engine)</h3>
+                    </div>
+                    
+                    <div class="engine-content">
+                        <div class="rejection-reasons">
+                            <h4>Checks for rejection reasons:</h4>
+                            
+                            <div class="reason-section">
+                                <h5><i class="fas fa-ban"></i> 1. Cheque / EMI Bounce</h5>
+                                <div class="bounce-limits">
+                                    <div class="limit-item">
+                                        <span class="limit-label">Monthly limit:</span>
+                                        <span class="limit-value">Not more than 2</span>
+                                    </div>
+                                    <div class="limit-item">
+                                        <span class="limit-label">Yearly limit:</span>
+                                        <span class="limit-value">Not more than 20</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="reason-section">
+                                <h4><i class="rupees-symbol"></i> 2. Bounce Charges</h5>
+                                <div class="charges-info">
+                                    <div class="charges-grid">
+                                        <div class="charge-detail">
+                                            Varies by bank:<br>
+                                            ₹250 / ₹400 / ₹500
+                                        </div>
+                                        <div class="charge-detail">
+                                            Maximum:<br>
+                                            ₹750
+                                        </div>
+                                        <div class="charge-detail">
+                                            Frequency:<br>
+                                            Charged once per month
+                                        </div>
+                                        <div class="charge-detail">
+                                            Penalty after bounce:<br>
+                                            ₹100 - ₹150 per day
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="overdue-calculation">
+                                        <h6><i class="fas fa-calculator"></i> Overdue Calculation:</h6>
+                                        <div class="calculation-formula">
+                                            Bounce charge + penalty = Overdue
+                                        </div>
+                                        <div class="overdue-rules">
+                                            <div class="overdue-rule danger">
+                                                <span>Overdue ≥ ₹1000</span>
+                                                <span>→ Must be cleared first</span>
+                                            </div>
+                                            <div class="overdue-rule success">
+                                                <span>Overdue < ₹1000</span>
+                                                <span>→ Acceptable</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="reason-section">
+                                <h5><i class="fas fa-calendar-times"></i> 3. Due Past Date</h5>
+                                <div class="due-past-example">
+                                    <div class="example-scenario">
+                                        Example: EMI date is 5th
+                                        <ol>
+                                            <li>If EMI bounces</li>
+                                            <li>EMI is NOT paid within 10 days</li>
+                                            <li>Due past date(DPD) > 10 days → ❌ REJECTED</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="reason-section">
+                                <h5><i class="fas fa-search"></i> 4. Enquiry Limit</h5>
+                                <div class="enquiry-limits">
+                                    <div class="limit-grid">
+                                        <div class="limit-card">
+                                            <div class="limit-period">Per Month</div>
+                                            <div class="limit-count">Less than 3 enquiries</div>
+                                        </div>
+                                        <div class="limit-card">
+                                            <div class="limit-period">Per Year</div>
+                                            <div class="limit-count">Less than 12 enquiries</div>
+                                        </div>
+                                    </div>
+                                    <div class="enquiry-definition">
+                                        Enquiry means: CIBIL check or loan application
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Eligibility Grade -->
+    <section class="section">
+        <div class="container">
+            <h2><i class="fas fa-medal"></i> Risk Eligibility Grade</h2>
+            
+            <div class="risk-grades-grid">
+                <div class="grade-card grade-a">
+                    <div class="grade-letter">A</div>
+                    <div class="grade-info">
+                        <div class="grade-meaning">Very safe</div>
+                        <div class="grade-status">Excellent</div>
+                    </div>
+                </div>
+                
+                <div class="grade-card grade-b">
+                    <div class="grade-letter">B</div>
+                    <div class="grade-info">
+                        <div class="grade-meaning">Safe</div>
+                        <div class="grade-status">Good</div>
+                    </div>
+                </div>
+                
+                <div class="grade-card grade-c">
+                    <div class="grade-letter">C</div>
+                    <div class="grade-info">
+                        <div class="grade-meaning">Medium</div>
+                        <div class="grade-status">Average</div>
+                    </div>
+                </div>
+                
+                <div class="grade-card grade-d">
+                    <div class="grade-letter">D</div>
+                    <div class="grade-info">
+                        <div class="grade-meaning">High risk</div>
+                        <div class="grade-status">Risky</div>
+                    </div>
+                </div>
+                
+                <div class="grade-card grade-e">
+                    <div class="grade-letter">E</div>
+                    <div class="grade-info">
+                        <div class="grade-meaning">Very high risk</div>
+                        <div class="grade-status">Very Risky</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grade-usage-note">
+                <h4><i class="fas fa-info-circle"></i> Usage in Policies:</h4>
+                <ul>
+                    <li>Toxic Profile: D or E grades not allowed</li>
+                    <li>Super Toxic Profile: Only A, B, C grades allowed</li>
+                    <li>Regular Profile: All grades acceptable based on other criteria</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-building"></i> About Flexi Loans</h3>
+                    <div class="company-info">
+                        <p>Flexi Loans is a leading NBFC specializing in unsecured business loans for SME/MSME since 2016.</p>
+                        <p>We provide ₹50K - ₹25L loans with 12-36 months tenure at competitive rates.</p>
+                        <p>Our 100% digital process ensures quick disbursal within 24-48 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <div class="quick-links">
+                        <a href="index.html#about" class="quick-link">
+                            <i class="fas fa-building"></i>
+                            <span>About Flexi Loans</span>
+                        </a>
+                        <a href="rbi-banking.html" class="quick-link">
+                            <i class="fas fa-university"></i>
+                            <span>RBI & Banking</span>
+                        </a>
+                        <a href="products.html" class="quick-link">
+                            <i class="fas fa-coins"></i>
+                            <span>Loan Products</span>
+                        </a>
+                        <a href="eligibility.html" class="quick-link">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Eligibility</span>
+                        </a>
+                        <a href="cibil-credit.html" class="quick-link">
+                            <i class="fas fa-chart-line"></i>
+                            <span>CIBIL Rules</span>
+                        </a>
+                        <a href="policies.html" class="quick-link">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Special Policies</span>
+                        </a>
+                        <a href="documents.html" class="quick-link">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Documents</span>
+                        </a>
+                        <a href="scripts.html" class="quick-link">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Scripts</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-text">
+                                Head Office
+                                7th Floor, One World Centre<br>
+                                Lower Parel, Mumbai - 400013
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                Established
+                                Since 2016<br>
+                                NBFC License Holder
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="contact-text">
+                                Specialization
+                                SME/MSME Business Loans<br>
+                                Unsecured Financing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="acknowledgment">
+                <h3><i class="fas fa-heart"></i> Special Acknowledgment</h3>
+                <p>Heartfelt gratitude to Mr. Sanath Sir (Sr. Trainer Vindhya) for providing this comprehensive training material and making this knowledge accessible to all Flexi Loans calling agents.</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>2026 Vishwajeet. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="scroll-to-top" id="scrollToTop" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
